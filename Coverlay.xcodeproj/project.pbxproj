@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D7D726AB203600AD50FF /* AppDelegate.swift */; };
+		3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */; };
+		3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */; };
+		3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E026AB204000AD50FF /* Assets.xcassets */; };
+		3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */; };
+		3EA8D80726AB293A00AD50FF /* CoverlayCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */; };
+		3EA8D80B26AB295900AD50FF /* CoverlayCameraViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */; };
+		3EA8D80E26AB296400AD50FF /* CoverlayCameraViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */; };
+		3EA8D81326AB29B300AD50FF /* CoverlayCameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */; };
+		3EA8D81726AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */; };
+		3EA8D84326AB2B9200AD50FF /* CoverlayCameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */; };
+		3EA8D84626AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */; };
+		3EA8D84926AB2C2900AD50FF /* CoverlayCameraInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */; };
+		3EA8D84C26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */; };
+		3EA8D84E26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */; };
+		9AB0EF0E7E78C804538AC5C8 /* Pods_Coverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EA8D7D426AB203600AD50FF /* Coverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA8D7D726AB203600AD50FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3EA8D7DE26AB203600AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CoverlayCamera.storyboard; sourceTree = "<group>"; };
+		3EA8D7E026AB204000AD50FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EA8D7E326AB204000AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewController.swift; sourceTree = "<group>"; };
+		3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewInput.swift; sourceTree = "<group>"; };
+		3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewOutput.swift; sourceTree = "<group>"; };
+		3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraPresenter.swift; sourceTree = "<group>"; };
+		3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraModuleAssembly.swift; sourceTree = "<group>"; };
+		3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraRouter.swift; sourceTree = "<group>"; };
+		3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraRouterImplementation.swift; sourceTree = "<group>"; };
+		3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractorInput.swift; sourceTree = "<group>"; };
+		3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractor.swift; sourceTree = "<group>"; };
+		3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractorOutput.swift; sourceTree = "<group>"; };
+		572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE3D04F99E7D5046A9BD4EA /* Pods-Coverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.debug.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.debug.xcconfig"; sourceTree = "<group>"; };
+		A22A36249540FE738775BC91 /* Pods-Coverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.release.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EA8D7D126AB203600AD50FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB0EF0E7E78C804538AC5C8 /* Pods_Coverlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EA8D7CB26AB203600AD50FF = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7D626AB203600AD50FF /* Coverlay */,
+				3EA8D7D526AB203600AD50FF /* Products */,
+				56BF23B43142B1E86B8A66C1 /* Pods */,
+				6317680E3882DA36B7FD8F8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EA8D7D526AB203600AD50FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7D426AB203600AD50FF /* Coverlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EA8D7D626AB203600AD50FF /* Coverlay */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7EE26AB20E000AD50FF /* PresentationLayer */,
+				3EA8D7EC26AB206D00AD50FF /* Common */,
+				3EA8D7ED26AB208100AD50FF /* Resources */,
+			);
+			path = Coverlay;
+			sourceTree = "<group>";
+		};
+		3EA8D7EC26AB206D00AD50FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7D726AB203600AD50FF /* AppDelegate.swift */,
+				3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */,
+				3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3EA8D7ED26AB208100AD50FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7E026AB204000AD50FF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EA8D7EE26AB20E000AD50FF /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7EF26AB20FE00AD50FF /* Screens */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		3EA8D7EF26AB20FE00AD50FF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7F026AB219700AD50FF /* CoverlayCamera */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3EA8D7F026AB219700AD50FF /* CoverlayCamera */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D81526AB29B900AD50FF /* Assembly */,
+				3EA8D7F226AB224E00AD50FF /* View */,
+				3EA8D81126AB29A100AD50FF /* Presenter */,
+				3EA8D84126AB2B5F00AD50FF /* Interactor */,
+				3EA8D84026AB2B5B00AD50FF /* Router */,
+				3EA8D7F126AB224000AD50FF /* Storyboard */,
+			);
+			path = CoverlayCamera;
+			sourceTree = "<group>";
+		};
+		3EA8D7F126AB224000AD50FF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EA8D7F226AB224E00AD50FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */,
+				3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */,
+				3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EA8D81126AB29A100AD50FF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3EA8D81526AB29B900AD50FF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3EA8D84026AB2B5B00AD50FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */,
+				3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3EA8D84126AB2B5F00AD50FF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */,
+				3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */,
+				3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		56BF23B43142B1E86B8A66C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EE3D04F99E7D5046A9BD4EA /* Pods-Coverlay.debug.xcconfig */,
+				A22A36249540FE738775BC91 /* Pods-Coverlay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6317680E3882DA36B7FD8F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EA8D7D326AB203600AD50FF /* Coverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EA8D7E826AB204000AD50FF /* Build configuration list for PBXNativeTarget "Coverlay" */;
+			buildPhases = (
+				4117EF6C00048D019A88BF79 /* [CP] Check Pods Manifest.lock */,
+				3EA8D7D026AB203600AD50FF /* Sources */,
+				3EA8D7D126AB203600AD50FF /* Frameworks */,
+				3EA8D7D226AB203600AD50FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coverlay;
+			productName = Coverlay;
+			productReference = 3EA8D7D426AB203600AD50FF /* Coverlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EA8D7CC26AB203600AD50FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3EA8D7D326AB203600AD50FF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3EA8D7CF26AB203600AD50FF /* Build configuration list for PBXProject "Coverlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EA8D7CB26AB203600AD50FF;
+			productRefGroup = 3EA8D7D526AB203600AD50FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EA8D7D326AB203600AD50FF /* Coverlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EA8D7D226AB203600AD50FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */,
+				3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */,
+				3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4117EF6C00048D019A88BF79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coverlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EA8D7D026AB203600AD50FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA8D81326AB29B300AD50FF /* CoverlayCameraPresenter.swift in Sources */,
+				3EA8D81726AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift in Sources */,
+				3EA8D80726AB293A00AD50FF /* CoverlayCameraViewController.swift in Sources */,
+				3EA8D84C26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift in Sources */,
+				3EA8D84926AB2C2900AD50FF /* CoverlayCameraInteractorInput.swift in Sources */,
+				3EA8D80B26AB295900AD50FF /* CoverlayCameraViewInput.swift in Sources */,
+				3EA8D84326AB2B9200AD50FF /* CoverlayCameraRouter.swift in Sources */,
+				3EA8D84626AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift in Sources */,
+				3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */,
+				3EA8D84E26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift in Sources */,
+				3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */,
+				3EA8D80E26AB296400AD50FF /* CoverlayCameraViewOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EA8D7DE26AB203600AD50FF /* Base */,
+			);
+			name = CoverlayCamera.storyboard;
+			sourceTree = "<group>";
+		};
+		3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EA8D7E326AB204000AD50FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EA8D7E626AB204000AD50FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EA8D7E726AB204000AD50FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EA8D7E926AB204000AD50FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE3D04F99E7D5046A9BD4EA /* Pods-Coverlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NJXVW7YT7;
+				INFOPLIST_FILE = Coverlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feyfolken.Coverlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EA8D7EA26AB204000AD50FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22A36249540FE738775BC91 /* Pods-Coverlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NJXVW7YT7;
+				INFOPLIST_FILE = Coverlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feyfolken.Coverlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EA8D7CF26AB203600AD50FF /* Build configuration list for PBXProject "Coverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA8D7E626AB204000AD50FF /* Debug */,
+				3EA8D7E726AB204000AD50FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EA8D7E826AB204000AD50FF /* Build configuration list for PBXNativeTarget "Coverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA8D7E926AB204000AD50FF /* Debug */,
+				3EA8D7EA26AB204000AD50FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EA8D7CC26AB203600AD50FF /* Project object */;
+}
