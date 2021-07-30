@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TMB-X4-CVR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="Coverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-Wy-0eg" customClass="NeumorphicCircleButton" customModule="Coverlay" customModuleProvider="target">
+                                <rect key="frame" x="152" y="420" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="IqM-7D-y2o"/>
+                                    <constraint firstAttribute="width" constant="110" id="kr9-e1-PXg"/>
+                                </constraints>
+                                <state key="normal" image="camera" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapOpenCameraModuleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oy4-1C-wC8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XnB-Wy-0eg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2J5-it-c8A"/>
+                            <constraint firstItem="XnB-Wy-0eg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2gr-zH-Jj6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WiD-b3-4Ky"/>
+                    <connections>
+                        <outlet property="openCameraModuleButton" destination="XnB-Wy-0eg" id="Bex-fg-HSi"/>
+                        <segue destination="Olf-6r-fIU" kind="presentation" identifier="MainScreenToCameraScreenSegue" id="kPv-13-JTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="69.642857142857139"/>
+        </scene>
+        <!--Coverlay Camera View Controller-->
+        <scene sceneID="8te-dW-gjF">
+            <objects>
+                <viewController id="Olf-6r-fIU" customClass="CoverlayCameraViewController" customModule="Coverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ob9-aQ-wYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iZ4-w5-c78"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jB-Wg-8pO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZN6-QU-qUV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TMB-X4-CVR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wo1-1j-myd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Mw-t9-5CL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-rh-bjU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,4 +7,5 @@
 
 protocol CoverlayCameraRouter {
     
+    func closeModule()
 }

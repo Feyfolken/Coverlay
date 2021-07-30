@@ -6,5 +6,6 @@ target 'Coverlay' do
   use_frameworks!
 
   # Pods for Coverlay
+  pod 'LiteRoute'
 
 end

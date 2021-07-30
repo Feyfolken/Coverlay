@@ -5,6 +5,8 @@
 //  Created by Feyfolken on 23.07.2021.
 //
 
+import UIKit
+
 final class CoverlayCameraPresenter {
     
     weak var view: CoverlayCameraViewInput!
@@ -16,6 +18,10 @@ extension CoverlayCameraPresenter: CoverlayCameraViewOutput {
     
     func viewIsReady() {
         view.setupInitialState()
+    }
+    
+    func cameraDidFinish(with resultImage: UIImage?) {
+        router.closeModule()
     }
 }
 

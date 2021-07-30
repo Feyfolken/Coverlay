@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CoverlayCameraViewController: UIViewController {
+final class CoverlayCameraViewController: UIViewController, UINavigationControllerDelegate {
     
     var output: CoverlayCameraViewOutput!
 
@@ -27,11 +27,42 @@ final class CoverlayCameraViewController: UIViewController {
         
         output.viewIsReady()
     }
+    
+    // MARK: - Private methods
+    private func setupAndPresentCamera() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            let cameraViewController = UIImagePickerController()
+            
+            cameraViewController.sourceType = .camera
+            cameraViewController.cameraCaptureMode = .photo
+            cameraViewController.cameraDevice = .rear
+            cameraViewController.allowsEditing = false
+            cameraViewController.delegate = self
+            
+            self.present(cameraViewController, animated: true)
+        }
+    }
 }
 
 extension CoverlayCameraViewController: CoverlayCameraViewInput {
     
     func setupInitialState() {
-        view.backgroundColor = .red
+        setupAndPresentCamera()
+    }
+}
+
+extension CoverlayCameraViewController: UIImagePickerControllerDelegate {
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: false)
+
+        let resultImage = info[.originalImage] as? UIImage
+        output.cameraDidFinish(with: resultImage)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: false)
+        
+        output.cameraDidFinish(with: nil)
     }
 }

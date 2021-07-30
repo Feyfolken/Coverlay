@@ -5,8 +5,6 @@
 //  Created by Feyfolken on 23.07.2021.
 //
 
-import UIKit
-
 final class CoverlayCameraModuleAssembly {
     
     static func assemble(with viewController: CoverlayCameraViewController) {
@@ -20,5 +18,6 @@ final class CoverlayCameraModuleAssembly {
         
         interactor.output = presenter
         viewController.output = presenter
+        router.transitionHandler = viewController
     }
 }

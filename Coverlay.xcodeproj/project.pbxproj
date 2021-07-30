@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */; };
+		3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF026B4226600F31D17 /* MainScreenViewController.swift */; };
+		3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */; };
+		3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF426B4227700F31D17 /* MainScreenViewOutput.swift */; };
+		3E780AF726B4228300F31D17 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF626B4228300F31D17 /* MainScreenPresenter.swift */; };
+		3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF826B4228C00F31D17 /* MainScreenInteractor.swift */; };
+		3E780AFB26B4229500F31D17 /* MainScreenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AFA26B4229500F31D17 /* MainScreenInteractorInput.swift */; };
+		3E780AFD26B4229E00F31D17 /* MainScreenInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AFC26B4229E00F31D17 /* MainScreenInteractorOutput.swift */; };
+		3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AFE26B422AD00F31D17 /* MainScreenRouter.swift */; };
+		3E780B0126B422B700F31D17 /* MainScreenRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0026B422B700F31D17 /* MainScreenRouterImplementation.swift */; };
+		3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */; };
+		3E780B0526B430F300F31D17 /* CoverlayCameraModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */; };
+		3E780B0826B4517B00F31D17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0726B4517B00F31D17 /* ColorExtension.swift */; };
+		3E780B0B26B4540100F31D17 /* NeumorphicCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */; };
 		3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D7D726AB203600AD50FF /* AppDelegate.swift */; };
 		3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */; };
 		3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */; };
@@ -26,6 +40,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleAssembly.swift; sourceTree = "<group>"; };
+		3E780AF026B4226600F31D17 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
+		3E780AF426B4227700F31D17 /* MainScreenViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewOutput.swift; sourceTree = "<group>"; };
+		3E780AF626B4228300F31D17 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		3E780AF826B4228C00F31D17 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		3E780AFA26B4229500F31D17 /* MainScreenInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorInput.swift; sourceTree = "<group>"; };
+		3E780AFC26B4229E00F31D17 /* MainScreenInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorOutput.swift; sourceTree = "<group>"; };
+		3E780AFE26B422AD00F31D17 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		3E780B0026B422B700F31D17 /* MainScreenRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouterImplementation.swift; sourceTree = "<group>"; };
+		3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleStoryboardConstants.swift; sourceTree = "<group>"; };
+		3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraModuleInput.swift; sourceTree = "<group>"; };
+		3E780B0726B4517B00F31D17 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicCircleButton.swift; sourceTree = "<group>"; };
 		3EA8D7D426AB203600AD50FF /* Coverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA8D7D726AB203600AD50FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +87,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E780AE826B4221000F31D17 /* CoverlayMainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AE926B4221F00F31D17 /* Assembly */,
+				3E780AED26B4223B00F31D17 /* View */,
+				3E780AEC26B4223500F31D17 /* Presenter */,
+				3E780AEB26B4222E00F31D17 /* Interactor */,
+				3E780AEA26B4222700F31D17 /* Router */,
+			);
+			path = CoverlayMainScreen;
+			sourceTree = "<group>";
+		};
+		3E780AE926B4221F00F31D17 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E780AEA26B4222700F31D17 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AFE26B422AD00F31D17 /* MainScreenRouter.swift */,
+				3E780B0026B422B700F31D17 /* MainScreenRouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E780AEB26B4222E00F31D17 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AF826B4228C00F31D17 /* MainScreenInteractor.swift */,
+				3E780AFA26B4229500F31D17 /* MainScreenInteractorInput.swift */,
+				3E780AFC26B4229E00F31D17 /* MainScreenInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E780AEC26B4223500F31D17 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AF626B4228300F31D17 /* MainScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E780AED26B4223B00F31D17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E780AF026B4226600F31D17 /* MainScreenViewController.swift */,
+				3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */,
+				3E780AF426B4227700F31D17 /* MainScreenViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E780B0626B4516800F31D17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E780B0726B4517B00F31D17 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E780B0926B453F500F31D17 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3EA8D7CB26AB203600AD50FF = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +181,8 @@
 		3EA8D7D626AB203600AD50FF /* Coverlay */ = {
 			isa = PBXGroup;
 			children = (
-				3EA8D7EE26AB20E000AD50FF /* PresentationLayer */,
 				3EA8D7EC26AB206D00AD50FF /* Common */,
+				3EA8D7EE26AB20E000AD50FF /* PresentationLayer */,
 				3EA8D7ED26AB208100AD50FF /* Resources */,
 			);
 			path = Coverlay;
@@ -90,6 +191,8 @@
 		3EA8D7EC26AB206D00AD50FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3E780B0926B453F500F31D17 /* Classes */,
+				3E780B0626B4516800F31D17 /* Extensions */,
 				3EA8D7D726AB203600AD50FF /* AppDelegate.swift */,
 				3EA8D7D926AB203600AD50FF /* SceneDelegate.swift */,
 				3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */,
@@ -116,7 +219,9 @@
 		3EA8D7EF26AB20FE00AD50FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3E780AE826B4221000F31D17 /* CoverlayMainScreen */,
 				3EA8D7F026AB219700AD50FF /* CoverlayCamera */,
+				3EA8D7F126AB224000AD50FF /* Storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -129,7 +234,6 @@
 				3EA8D81126AB29A100AD50FF /* Presenter */,
 				3EA8D84126AB2B5F00AD50FF /* Interactor */,
 				3EA8D84026AB2B5B00AD50FF /* Router */,
-				3EA8D7F126AB224000AD50FF /* Storyboard */,
 			);
 			path = CoverlayCamera;
 			sourceTree = "<group>";
@@ -138,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */,
+				3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -156,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */,
+				3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -215,6 +321,7 @@
 				3EA8D7D026AB203600AD50FF /* Sources */,
 				3EA8D7D126AB203600AD50FF /* Frameworks */,
 				3EA8D7D226AB203600AD50FF /* Resources */,
+				AB6702A7B07CC4B470734EC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +400,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB6702A7B07CC4B470734EC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coverlay/Pods-Coverlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coverlay/Pods-Coverlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coverlay/Pods-Coverlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,18 +424,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */,
 				3EA8D81326AB29B300AD50FF /* CoverlayCameraPresenter.swift in Sources */,
 				3EA8D81726AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift in Sources */,
+				3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */,
+				3E780B0826B4517B00F31D17 /* ColorExtension.swift in Sources */,
 				3EA8D80726AB293A00AD50FF /* CoverlayCameraViewController.swift in Sources */,
 				3EA8D84C26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift in Sources */,
 				3EA8D84926AB2C2900AD50FF /* CoverlayCameraInteractorInput.swift in Sources */,
+				3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */,
+				3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */,
 				3EA8D80B26AB295900AD50FF /* CoverlayCameraViewInput.swift in Sources */,
+				3E780B0B26B4540100F31D17 /* NeumorphicCircleButton.swift in Sources */,
+				3E780AFD26B4229E00F31D17 /* MainScreenInteractorOutput.swift in Sources */,
 				3EA8D84326AB2B9200AD50FF /* CoverlayCameraRouter.swift in Sources */,
+				3E780B0126B422B700F31D17 /* MainScreenRouterImplementation.swift in Sources */,
 				3EA8D84626AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift in Sources */,
+				3E780B0526B430F300F31D17 /* CoverlayCameraModuleInput.swift in Sources */,
 				3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */,
+				3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */,
+				3E780AFB26B4229500F31D17 /* MainScreenInteractorInput.swift in Sources */,
 				3EA8D84E26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift in Sources */,
+				3E780AF726B4228300F31D17 /* MainScreenPresenter.swift in Sources */,
+				3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */,
 				3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */,
 				3EA8D80E26AB296400AD50FF /* CoverlayCameraViewOutput.swift in Sources */,
+				3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
