@@ -38,17 +38,7 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
     
     // MARK: - Private
     private func createOpenCameraModuleButton() {
-//        openCameraModuleButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//        openCameraModuleButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
-//        openCameraModuleButton.frame.size.height = 110
-//        openCameraModuleButton.frame.size.width = 110
-        openCameraModuleButton.layer.cornerRadius = openCameraModuleButton.frame.size.width / 2
-        openCameraModuleButton.clipsToBounds = true
-        openCameraModuleButton.backgroundColor = .red
 //        openCameraModuleButton.setImage(UIImage(systemName: "camera"), for: .normal)
-        
-//        view.addSubview(openCameraModuleButton)
     }
     
     
@@ -63,7 +53,9 @@ extension MainScreenViewController: MainScreenViewInput {
     func setupInitialState() {
         title = "Coverlay"
         
+        navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
         view.backgroundColor = .mainScreenBackgroundColor
+        
         createOpenCameraModuleButton()
     }
 }
