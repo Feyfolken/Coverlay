@@ -10,12 +10,6 @@ import UIKit
 final class MainScreenViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var openCameraModuleButton: NeumorphicCircleButton!
-    //    let openCameraModuleButton: NeumorphicCircleButton = {
-//        let openCameraModuleButton = NeumorphicCircleButton()
-//        openCameraModuleButton.addTarget(self, action: #selector(didTapOpenCameraModuleButton(_:)), for: .touchUpInside)
-//
-//        return openCameraModuleButton
-//    }()
     
     var output: MainScreenViewOutput!
 
@@ -38,16 +32,12 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
     
     // MARK: - Private
     private func createOpenCameraModuleButton() {
-//        openCameraModuleButton.setImage(UIImage(systemName: "camera"), for: .normal)
-    }
-    
-    
-    @IBAction func didTapOpenCameraModuleButton(_ sender: Any) {
-        output.didTapOpenCameraModuleButton()
+        openCameraModuleButton.setButtonImage(UIImage(systemName: "camera")!)
+        openCameraModuleButton.delegate = self
     }
 }
 
-// MARK: -
+// MARK: - MainScreenViewInput
 extension MainScreenViewController: MainScreenViewInput {
     
     func setupInitialState() {
@@ -55,7 +45,15 @@ extension MainScreenViewController: MainScreenViewInput {
         
         navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
         view.backgroundColor = .mainScreenBackgroundColor
-        
+
         createOpenCameraModuleButton()
+    }
+}
+
+// MARK: - NeumorphicCircleButtonDelegate
+extension MainScreenViewController: NeumorphicCircleButtonDelegate {
+    
+    func didTapNeumorphicCircleButton(_ button: NeumorphicCircleButton) {
+        output.didTapOpenCameraModuleButton()
     }
 }

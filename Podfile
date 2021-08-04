@@ -7,5 +7,6 @@ target 'Coverlay' do
 
   # Pods for Coverlay
   pod 'LiteRoute'
+  pod 'SnapKit', '~> 5.0.0'
 
 end

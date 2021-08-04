@@ -6,15 +6,17 @@
 //
 
 import UIKit
+import SnapKit
 
 protocol NeumorphicCircleButtonDelegate: AnyObject {
     
-    func didTapNeumorphicCircleButton()
+    func didTapNeumorphicCircleButton(_ button: NeumorphicCircleButton)
 }
 
 final class NeumorphicCircleButton: UIView {
     
-    weak var delegate: NeumorphicCircleButtonDelegate?
+    public weak var delegate: NeumorphicCircleButtonDelegate?
+    public var buttonImageView: UIImageView?
     
     private let topLeftShadowOffset = CGSize(width: -5, height: -5)
     private let bottomRightShadowOffset = CGSize(width: 10, height: 10)
@@ -62,6 +64,21 @@ final class NeumorphicCircleButton: UIView {
         setupView()
         setupPressGesture()
     }
+    //MARK: - Public
+    public func setButtonImage(_ image: UIImage) {
+        buttonImageView = UIImageView()
+        buttonImageView?.contentMode = .scaleAspectFit
+        buttonImageView?.backgroundColor = .clear
+        buttonImageView?.image = image
+        
+        self.addSubview(buttonImageView!)
+        
+        buttonImageView?.snp.makeConstraints { maker in
+            maker.centerX.centerY.equalToSuperview()
+            maker.height.equalTo(self.bounds.height / 4)
+            maker.width.equalTo(self.bounds.width / 4)
+        }
+    }
     
     //MARK: - Private
     private func setupView() {
@@ -76,7 +93,7 @@ final class NeumorphicCircleButton: UIView {
         let pressGesture = UILongPressGestureRecognizer()
         pressGesture.addTarget(self, action: #selector(handleButtonPressGesture(sender:)))
         pressGesture.minimumPressDuration = .zero
-
+        
         self.addGestureRecognizer(pressGesture)
     }
     
@@ -90,7 +107,7 @@ final class NeumorphicCircleButton: UIView {
             lightShadow.shadowOffset = topLeftShadowOffset
             darkShadow.shadowOffset = bottomRightShadowOffset
             
-            delegate?.didTapNeumorphicCircleButton()
+            delegate?.didTapNeumorphicCircleButton(self)
         }
     }
 }
