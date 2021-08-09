@@ -32,7 +32,7 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
     
     // MARK: - Private
     private func createOpenCameraModuleButton() {
-        openCameraModuleButton.setButtonImage(UIImage(systemName: "camera")!)
+        openCameraModuleButton.setButtonImage(UIImage(named: "photo-camera")!)
         openCameraModuleButton.delegate = self
     }
 }

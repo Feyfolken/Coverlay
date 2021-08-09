@@ -17,6 +17,17 @@ final class NeumorphicCircleButton: UIView {
     
     public weak var delegate: NeumorphicCircleButtonDelegate?
     public var buttonImageView: UIImageView?
+    public var darkShadowColor: CGColor = UIColor.darkShadowColor.cgColor {
+        didSet {
+            darkShadow.shadowColor = darkShadowColor
+        }
+    }
+    
+    public var lightShadowColor: CGColor = UIColor.lightShadowColor.cgColor {
+        didSet {
+            lightShadow.shadowColor = lightShadowColor
+        }
+    }
     
     private let topLeftShadowOffset = CGSize(width: -5, height: -5)
     private let bottomRightShadowOffset = CGSize(width: 10, height: 10)
@@ -30,7 +41,7 @@ final class NeumorphicCircleButton: UIView {
         darkShadow.shadowOpacity = 1
         darkShadow.shadowRadius = 16
         darkShadow.cornerRadius = frame.size.width / 2
-        darkShadow.shadowColor = UIColor.darkShadowColor.cgColor
+        darkShadow.shadowColor = darkShadowColor
         
         return darkShadow
     }()
@@ -44,7 +55,7 @@ final class NeumorphicCircleButton: UIView {
         lightShadow.shadowOpacity = 1
         lightShadow.shadowRadius = 16
         lightShadow.cornerRadius = frame.size.width / 2
-        lightShadow.shadowColor = UIColor.lightShadowColor.cgColor
+        lightShadow.shadowColor = lightShadowColor
         
         return lightShadow
     }()
