@@ -38,27 +38,12 @@
                     <navigationItem key="navigationItem" id="WiD-b3-4Ky"/>
                     <connections>
                         <outlet property="openCameraModuleButton" destination="XnB-Wy-0eg" id="Bex-fg-HSi"/>
-                        <segue destination="Olf-6r-fIU" kind="presentation" identifier="MainScreenToCameraScreenSegue" id="kPv-13-JTf"/>
+                        <segue destination="RcH-LK-k2X" kind="presentation" identifier="mainScreenModuleToContainerModule" modalPresentationStyle="fullScreen" id="SXn-qO-qpw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034.7826086956522" y="69.642857142857139"/>
-        </scene>
-        <!--Coverlay Camera View Controller-->
-        <scene sceneID="8te-dW-gjF">
-            <objects>
-                <viewController id="Olf-6r-fIU" customClass="CoverlayCameraViewController" customModule="Coverlay" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ob9-aQ-wYQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="iZ4-w5-c78"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0jB-Wg-8pO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1946" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZN6-QU-qUV">
@@ -78,6 +63,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBe-rh-bjU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124.6376811594203" y="69.642857142857139"/>
+        </scene>
+        <!--Coverlay Camera Container View Controller-->
+        <scene sceneID="QUF-xE-FAv">
+            <objects>
+                <viewController id="RcH-LK-k2X" customClass="CoverlayCameraContainerViewController" customModule="Coverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0MO-S9-tHs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-z1-Xiv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXK-xZ-L17">
+                                <rect key="frame" x="348" y="93" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.94117647059999998" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GFX-ff-Eyu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mbb-z1-Xiv" firstAttribute="top" secondItem="GFX-ff-Eyu" secondAttribute="top" id="3vm-wj-Sxg"/>
+                            <constraint firstItem="GFX-ff-Eyu" firstAttribute="trailing" secondItem="mbb-z1-Xiv" secondAttribute="trailing" id="Q3z-Hb-O8I"/>
+                            <constraint firstItem="mbb-z1-Xiv" firstAttribute="leading" secondItem="GFX-ff-Eyu" secondAttribute="leading" id="eSu-wW-uKv"/>
+                            <constraint firstAttribute="bottom" secondItem="mbb-z1-Xiv" secondAttribute="bottom" id="jDg-Mo-3bi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X2n-tH-mPa"/>
+                    <connections>
+                        <outlet property="cameraContainerView" destination="mbb-z1-Xiv" id="Cwa-wz-zyT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxn-Sc-avb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="70"/>
         </scene>
     </scenes>
     <resources>

@@ -6,7 +6,7 @@
 //
 import UIKit
 
-protocol CoverlayCameraViewOutput {
+protocol CoverlayCameraContainerViewOutput {
     
     func viewIsReady()
     func cameraDidFinish(with resultImage: UIImage?)

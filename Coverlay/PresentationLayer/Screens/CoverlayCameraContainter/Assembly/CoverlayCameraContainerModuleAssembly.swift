@@ -5,12 +5,12 @@
 //  Created by Feyfolken on 23.07.2021.
 //
 
-final class CoverlayCameraModuleAssembly {
+final class CoverlayCameraContainerModuleAssembly {
     
-    static func assemble(with viewController: CoverlayCameraViewController) {
-        let presenter = CoverlayCameraPresenter()
-        let interactor = CoverlayCameraInteractor()
-        let router = CoverlayCameraRouterImplementation()
+    static func assemble(with viewController: CoverlayCameraContainerViewController) {
+        let presenter = CoverlayCameraContainerPresenter()
+        let interactor = CoverlayCameraContainerInteractor()
+        let router = CoverlayCameraContainerRouterImplementation()
         
         presenter.interactor = interactor
         presenter.view = viewController

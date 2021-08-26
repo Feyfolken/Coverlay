@@ -6,5 +6,5 @@
 //
 
 enum MainModuleStoryboardConstants {
-    static let mainScreenToCameraScreenSegue = "MainScreenToCameraScreenSegue"
+    static let mainScreenModuleToContainerModule = "mainScreenModuleToContainerModule"
 }

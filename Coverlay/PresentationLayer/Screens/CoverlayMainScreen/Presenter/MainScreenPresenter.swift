@@ -19,7 +19,7 @@ extension MainScreenPresenter: MainScreenViewOutput {
     }
     
     func didTapOpenCameraModuleButton() {
-//        router.openCameraModule()
+        router.openCameraModule()
     }
 }
 

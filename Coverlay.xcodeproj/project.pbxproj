@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */; };
+		3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */; };
+		3E66E0A126D69036009C22A7 /* CoverlayCameraContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */; };
+		3E66E0A226D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09526D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift */; };
+		3E66E0A326D69036009C22A7 /* CoverlayCameraContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09626D69036009C22A7 /* CoverlayCameraContainerViewController.swift */; };
+		3E66E0A426D69036009C22A7 /* CoverlayCameraContainerViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09726D69036009C22A7 /* CoverlayCameraContainerViewInput.swift */; };
+		3E66E0A526D69036009C22A7 /* CoverlayCameraContainerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09926D69036009C22A7 /* CoverlayCameraContainerInteractor.swift */; };
+		3E66E0A626D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09A26D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift */; };
+		3E66E0A726D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09B26D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift */; };
+		3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09D26D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift */; };
+		3E66E0A926D69036009C22A7 /* CoverlayCameraContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09E26D69036009C22A7 /* CoverlayCameraContainerRouter.swift */; };
+		3E66E0AB26D69267009C22A7 /* ContainerViewEmbedSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */; };
 		3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */; };
 		3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF026B4226600F31D17 /* MainScreenViewController.swift */; };
 		3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */; };
@@ -18,7 +30,6 @@
 		3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AFE26B422AD00F31D17 /* MainScreenRouter.swift */; };
 		3E780B0126B422B700F31D17 /* MainScreenRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0026B422B700F31D17 /* MainScreenRouterImplementation.swift */; };
 		3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */; };
-		3E780B0526B430F300F31D17 /* CoverlayCameraModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */; };
 		3E780B0826B4517B00F31D17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0726B4517B00F31D17 /* ColorExtension.swift */; };
 		3E780B0B26B4540100F31D17 /* NeumorphicCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */; };
 		3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D7D726AB203600AD50FF /* AppDelegate.swift */; };
@@ -26,20 +37,22 @@
 		3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */; };
 		3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E026AB204000AD50FF /* Assets.xcassets */; };
 		3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */; };
-		3EA8D80726AB293A00AD50FF /* CoverlayCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */; };
-		3EA8D80B26AB295900AD50FF /* CoverlayCameraViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */; };
-		3EA8D80E26AB296400AD50FF /* CoverlayCameraViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */; };
-		3EA8D81326AB29B300AD50FF /* CoverlayCameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */; };
-		3EA8D81726AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */; };
-		3EA8D84326AB2B9200AD50FF /* CoverlayCameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */; };
-		3EA8D84626AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */; };
-		3EA8D84926AB2C2900AD50FF /* CoverlayCameraInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */; };
-		3EA8D84C26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */; };
-		3EA8D84E26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */; };
 		9AB0EF0E7E78C804538AC5C8 /* Pods_Coverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleAssembly.swift; sourceTree = "<group>"; };
+		3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleInput.swift; sourceTree = "<group>"; };
+		3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerPresenter.swift; sourceTree = "<group>"; };
+		3E66E09526D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerViewOutput.swift; sourceTree = "<group>"; };
+		3E66E09626D69036009C22A7 /* CoverlayCameraContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerViewController.swift; sourceTree = "<group>"; };
+		3E66E09726D69036009C22A7 /* CoverlayCameraContainerViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerViewInput.swift; sourceTree = "<group>"; };
+		3E66E09926D69036009C22A7 /* CoverlayCameraContainerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerInteractor.swift; sourceTree = "<group>"; };
+		3E66E09A26D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerInteractorOutput.swift; sourceTree = "<group>"; };
+		3E66E09B26D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerInteractorInput.swift; sourceTree = "<group>"; };
+		3E66E09D26D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerRouterImplementation.swift; sourceTree = "<group>"; };
+		3E66E09E26D69036009C22A7 /* CoverlayCameraContainerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerRouter.swift; sourceTree = "<group>"; };
+		3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewEmbedSegue.swift; sourceTree = "<group>"; };
 		3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleAssembly.swift; sourceTree = "<group>"; };
 		3E780AF026B4226600F31D17 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
@@ -51,7 +64,6 @@
 		3E780AFE26B422AD00F31D17 /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
 		3E780B0026B422B700F31D17 /* MainScreenRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouterImplementation.swift; sourceTree = "<group>"; };
 		3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleStoryboardConstants.swift; sourceTree = "<group>"; };
-		3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraModuleInput.swift; sourceTree = "<group>"; };
 		3E780B0726B4517B00F31D17 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicCircleButton.swift; sourceTree = "<group>"; };
 		3EA8D7D426AB203600AD50FF /* Coverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,16 +72,6 @@
 		3EA8D7DE26AB203600AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CoverlayCamera.storyboard; sourceTree = "<group>"; };
 		3EA8D7E026AB204000AD50FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EA8D7E326AB204000AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewController.swift; sourceTree = "<group>"; };
-		3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewInput.swift; sourceTree = "<group>"; };
-		3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraViewOutput.swift; sourceTree = "<group>"; };
-		3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraPresenter.swift; sourceTree = "<group>"; };
-		3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraModuleAssembly.swift; sourceTree = "<group>"; };
-		3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraRouter.swift; sourceTree = "<group>"; };
-		3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraRouterImplementation.swift; sourceTree = "<group>"; };
-		3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractorInput.swift; sourceTree = "<group>"; };
-		3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractor.swift; sourceTree = "<group>"; };
-		3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraInteractorOutput.swift; sourceTree = "<group>"; };
 		572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3D04F99E7D5046A9BD4EA /* Pods-Coverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.debug.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.debug.xcconfig"; sourceTree = "<group>"; };
 		A22A36249540FE738775BC91 /* Pods-Coverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.release.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E66E08E26D69036009C22A7 /* CoverlayCameraContainter */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E08F26D69036009C22A7 /* Assembly */,
+				3E66E09426D69036009C22A7 /* View */,
+				3E66E09126D69036009C22A7 /* Presenter */,
+				3E66E09826D69036009C22A7 /* Interactor */,
+				3E66E09C26D69036009C22A7 /* Router */,
+			);
+			path = CoverlayCameraContainter;
+			sourceTree = "<group>";
+		};
+		3E66E08F26D69036009C22A7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E66E09126D69036009C22A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */,
+				3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E66E09426D69036009C22A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E09526D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift */,
+				3E66E09626D69036009C22A7 /* CoverlayCameraContainerViewController.swift */,
+				3E66E09726D69036009C22A7 /* CoverlayCameraContainerViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E66E09826D69036009C22A7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E09926D69036009C22A7 /* CoverlayCameraContainerInteractor.swift */,
+				3E66E09A26D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift */,
+				3E66E09B26D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E66E09C26D69036009C22A7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E66E09D26D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift */,
+				3E66E09E26D69036009C22A7 /* CoverlayCameraContainerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		3E780AE826B4221000F31D17 /* CoverlayMainScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */,
+				3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -220,22 +281,10 @@
 			isa = PBXGroup;
 			children = (
 				3E780AE826B4221000F31D17 /* CoverlayMainScreen */,
-				3EA8D7F026AB219700AD50FF /* CoverlayCamera */,
+				3E66E08E26D69036009C22A7 /* CoverlayCameraContainter */,
 				3EA8D7F126AB224000AD50FF /* Storyboard */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		3EA8D7F026AB219700AD50FF /* CoverlayCamera */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D81526AB29B900AD50FF /* Assembly */,
-				3EA8D7F226AB224E00AD50FF /* View */,
-				3EA8D81126AB29A100AD50FF /* Presenter */,
-				3EA8D84126AB2B5F00AD50FF /* Interactor */,
-				3EA8D84026AB2B5B00AD50FF /* Router */,
-			);
-			path = CoverlayCamera;
 			sourceTree = "<group>";
 		};
 		3EA8D7F126AB224000AD50FF /* Storyboard */ = {
@@ -245,52 +294,6 @@
 				3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		3EA8D7F226AB224E00AD50FF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D80626AB293A00AD50FF /* CoverlayCameraViewController.swift */,
-				3EA8D80D26AB296400AD50FF /* CoverlayCameraViewOutput.swift */,
-				3EA8D80A26AB295900AD50FF /* CoverlayCameraViewInput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3EA8D81126AB29A100AD50FF /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D81226AB29B300AD50FF /* CoverlayCameraPresenter.swift */,
-				3E780B0426B430F300F31D17 /* CoverlayCameraModuleInput.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		3EA8D81526AB29B900AD50FF /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D81626AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		3EA8D84026AB2B5B00AD50FF /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D84226AB2B9200AD50FF /* CoverlayCameraRouter.swift */,
-				3EA8D84526AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		3EA8D84126AB2B5F00AD50FF /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				3EA8D84826AB2C2800AD50FF /* CoverlayCameraInteractorInput.swift */,
-				3EA8D84B26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift */,
-				3EA8D84D26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		56BF23B43142B1E86B8A66C1 /* Pods */ = {
@@ -425,31 +428,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */,
-				3EA8D81326AB29B300AD50FF /* CoverlayCameraPresenter.swift in Sources */,
-				3EA8D81726AB29CF00AD50FF /* CoverlayCameraModuleAssembly.swift in Sources */,
+				3E66E0A626D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift in Sources */,
 				3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */,
 				3E780B0826B4517B00F31D17 /* ColorExtension.swift in Sources */,
-				3EA8D80726AB293A00AD50FF /* CoverlayCameraViewController.swift in Sources */,
-				3EA8D84C26AB2C2F00AD50FF /* CoverlayCameraInteractor.swift in Sources */,
-				3EA8D84926AB2C2900AD50FF /* CoverlayCameraInteractorInput.swift in Sources */,
+				3E66E0A326D69036009C22A7 /* CoverlayCameraContainerViewController.swift in Sources */,
+				3E66E0A926D69036009C22A7 /* CoverlayCameraContainerRouter.swift in Sources */,
 				3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */,
+				3E66E0A226D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift in Sources */,
 				3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */,
-				3EA8D80B26AB295900AD50FF /* CoverlayCameraViewInput.swift in Sources */,
+				3E66E0A726D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift in Sources */,
 				3E780B0B26B4540100F31D17 /* NeumorphicCircleButton.swift in Sources */,
 				3E780AFD26B4229E00F31D17 /* MainScreenInteractorOutput.swift in Sources */,
-				3EA8D84326AB2B9200AD50FF /* CoverlayCameraRouter.swift in Sources */,
+				3E66E0AB26D69267009C22A7 /* ContainerViewEmbedSegue.swift in Sources */,
 				3E780B0126B422B700F31D17 /* MainScreenRouterImplementation.swift in Sources */,
-				3EA8D84626AB2B9A00AD50FF /* CoverlayCameraRouterImplementation.swift in Sources */,
-				3E780B0526B430F300F31D17 /* CoverlayCameraModuleInput.swift in Sources */,
+				3E66E0A426D69036009C22A7 /* CoverlayCameraContainerViewInput.swift in Sources */,
+				3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */,
 				3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */,
 				3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */,
 				3E780AFB26B4229500F31D17 /* MainScreenInteractorInput.swift in Sources */,
-				3EA8D84E26AB2C3600AD50FF /* CoverlayCameraInteractorOutput.swift in Sources */,
+				3E66E0A526D69036009C22A7 /* CoverlayCameraContainerInteractor.swift in Sources */,
+				3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */,
 				3E780AF726B4228300F31D17 /* MainScreenPresenter.swift in Sources */,
 				3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */,
 				3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */,
-				3EA8D80E26AB296400AD50FF /* CoverlayCameraViewOutput.swift in Sources */,
+				3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */,
 				3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */,
+				3E66E0A126D69036009C22A7 /* CoverlayCameraContainerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

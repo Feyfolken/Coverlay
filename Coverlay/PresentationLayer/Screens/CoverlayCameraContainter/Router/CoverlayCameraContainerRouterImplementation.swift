@@ -7,12 +7,12 @@
 
 import LiteRoute
 
-final class CoverlayCameraRouterImplementation {
+final class CoverlayCameraContainerRouterImplementation {
     
     weak var transitionHandler: TransitionHandler!
 }
 
-extension CoverlayCameraRouterImplementation: CoverlayCameraRouter {
+extension CoverlayCameraContainerRouterImplementation: CoverlayCameraContainerRouter {
     
     func closeModule() {
        try! transitionHandler
