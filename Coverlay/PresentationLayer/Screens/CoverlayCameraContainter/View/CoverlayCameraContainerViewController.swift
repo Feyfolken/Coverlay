@@ -10,6 +10,9 @@ import UIKit
 final class CoverlayCameraContainerViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraContainerView: UIView!
+    @IBOutlet weak var photoGalleryButton: UIButton!
+    
+    private var coverImageView: UIImageView!
     
     var output: CoverlayCameraContainerViewOutput!
     var imagePickers: UIImagePickerController?
@@ -33,7 +36,6 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     
     // MARK: - Private methods
     private func addCameraInView() {
-        
         imagePickers = UIImagePickerController()
         if UIImagePickerController.isCameraDeviceAvailable( UIImagePickerController.CameraDevice.rear) {
             imagePickers?.delegate = self
@@ -43,10 +45,36 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
             
             cameraContainerView.addSubview((imagePickers?.view)!)
             imagePickers?.view.frame = cameraContainerView.bounds
-            imagePickers?.allowsEditing = false
+            imagePickers?.allowsEditing = true
             imagePickers?.showsCameraControls = true
             imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
+            
+            
         }
+    }
+    
+    private func setupPhotoGalleryButton() {
+        photoGalleryButton.setImage(UIImage(named: "photo-gallery"), for: .normal)
+        photoGalleryButton.tintColor = .white
+        photoGalleryButton.backgroundColor = .clear
+    }
+    
+    private func createImageView() {
+        guard let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "CAMPreviewView") else { return }
+        
+        coverImageView = UIImageView(frame: cameraPreview.frame)
+        cameraContainerView.addSubview(coverImageView)
+    }
+    
+    //MARK: IBActions
+    @IBAction func didTapPhotoGalleryButton(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        
+        present(imagePicker, animated: true)
     }
 }
 
@@ -55,6 +83,7 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
     
     func setupInitialState() {
         addCameraInView()
+        setupPhotoGalleryButton()
     }
 }
 
@@ -62,9 +91,14 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
 extension CoverlayCameraContainerViewController: UIImagePickerControllerDelegate {
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: false)
-
         let resultImage = info[.originalImage] as? UIImage
+
+        if picker.sourceType == .photoLibrary {
+            createImageView()
+            coverImageView.image = resultImage?.withAlphaComponent(0.5)
+        }
+        
+        picker.dismiss(animated: false)
         output.cameraDidFinish(with: resultImage)
     }
     
@@ -74,3 +108,4 @@ extension CoverlayCameraContainerViewController: UIImagePickerControllerDelegate
         output.cameraDidFinish(with: nil)
     }
 }
+

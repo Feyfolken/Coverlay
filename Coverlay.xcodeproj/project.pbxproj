@@ -19,6 +19,9 @@
 		3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09D26D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift */; };
 		3E66E0A926D69036009C22A7 /* CoverlayCameraContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09E26D69036009C22A7 /* CoverlayCameraContainerRouter.swift */; };
 		3E66E0AB26D69267009C22A7 /* ContainerViewEmbedSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */; };
+		3E6EAD1B26D9541100DB587B /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EAD1A26D9541000DB587B /* ImageExtension.swift */; };
+		3E6EAD1D26D95E1E00DB587B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EAD1C26D95E1E00DB587B /* UIViewExtension.swift */; };
+		3E6EAD1F26D95E5800DB587B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6EAD1E26D95E5800DB587B /* NSObjectExtension.swift */; };
 		3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */; };
 		3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF026B4226600F31D17 /* MainScreenViewController.swift */; };
 		3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */; };
@@ -53,6 +56,9 @@
 		3E66E09D26D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerRouterImplementation.swift; sourceTree = "<group>"; };
 		3E66E09E26D69036009C22A7 /* CoverlayCameraContainerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerRouter.swift; sourceTree = "<group>"; };
 		3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewEmbedSegue.swift; sourceTree = "<group>"; };
+		3E6EAD1A26D9541000DB587B /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		3E6EAD1C26D95E1E00DB587B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		3E6EAD1E26D95E5800DB587B /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		3E780AEE26B4225A00F31D17 /* MainScreenModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleAssembly.swift; sourceTree = "<group>"; };
 		3E780AF026B4226600F31D17 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		3E780AF226B4226D00F31D17 /* MainScreenViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewInput.swift; sourceTree = "<group>"; };
@@ -208,6 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				3E780B0726B4517B00F31D17 /* ColorExtension.swift */,
+				3E6EAD1A26D9541000DB587B /* ImageExtension.swift */,
+				3E6EAD1C26D95E1E00DB587B /* UIViewExtension.swift */,
+				3E6EAD1E26D95E5800DB587B /* NSObjectExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,8 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */,
+				3E6EAD1F26D95E5800DB587B /* NSObjectExtension.swift in Sources */,
 				3E66E0A626D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift in Sources */,
 				3E780AF326B4226D00F31D17 /* MainScreenViewInput.swift in Sources */,
+				3E6EAD1B26D9541100DB587B /* ImageExtension.swift in Sources */,
 				3E780B0826B4517B00F31D17 /* ColorExtension.swift in Sources */,
 				3E66E0A326D69036009C22A7 /* CoverlayCameraContainerViewController.swift in Sources */,
 				3E66E0A926D69036009C22A7 /* CoverlayCameraContainerRouter.swift in Sources */,
@@ -450,6 +461,7 @@
 				3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */,
 				3E780AF726B4228300F31D17 /* MainScreenPresenter.swift in Sources */,
 				3E780AEF26B4225A00F31D17 /* MainScreenModuleAssembly.swift in Sources */,
+				3E6EAD1D26D95E1E00DB587B /* UIViewExtension.swift in Sources */,
 				3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */,
 				3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */,
 				3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */,

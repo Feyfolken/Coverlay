@@ -64,5 +64,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>To use this app you need to give an access to the camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To use this app you need to give an access to the photo gallery</string>
 </dict>
 </plist>
