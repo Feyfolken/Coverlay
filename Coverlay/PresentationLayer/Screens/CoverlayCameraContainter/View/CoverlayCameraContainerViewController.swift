@@ -11,6 +11,11 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     
     @IBOutlet weak var cameraContainerView: UIView!
     @IBOutlet weak var photoGalleryButton: UIButton!
+    @IBOutlet weak var overlayOpacitySlider: UISlider! {
+        didSet {
+            overlayOpacitySlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
+        }
+    }
     
     private var coverImageView: UIImageView!
     
@@ -48,8 +53,6 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
             imagePickers?.allowsEditing = true
             imagePickers?.showsCameraControls = true
             imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
-            
-            
         }
     }
     
@@ -64,6 +67,45 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         
         coverImageView = UIImageView(frame: cameraPreview.frame)
         cameraContainerView.addSubview(coverImageView)
+    }
+    
+    private func setupImageOpacitySlider() {
+        overlayOpacitySlider.tintColor = .lightGray
+        overlayOpacitySlider.minimumValue = 0.0
+        overlayOpacitySlider.maximumValue = 1.0
+        
+        overlayOpacitySlider.addTarget(self, action: #selector(didChangeSliderValue(sender:)), for: .valueChanged)
+        enableOverlayOpacitySlider(false)
+    }
+    
+    private func enableOverlayOpacitySlider(_ enabled: Bool) {
+        if enabled {
+            overlayOpacitySlider.isUserInteractionEnabled = true
+            overlayOpacitySlider.isHidden = false
+            
+        } else {
+            overlayOpacitySlider.isUserInteractionEnabled = false
+            overlayOpacitySlider.isHidden = true
+            overlayOpacitySlider.value = 0.5
+        }
+    }
+    
+    private func displayOverlayImage(_ image: UIImage?) {
+        guard let rawImage = image else { return }
+        
+        createImageView()
+        coverImageView.image = rawImage
+        coverImageView.alpha = 0.5
+        
+        enableOverlayOpacitySlider(true)
+    }
+    
+    @objc
+    private func didChangeSliderValue(sender: UISlider) {
+        guard coverImageView != nil,
+              coverImageView.image != nil else { return }
+        
+        coverImageView.alpha = CGFloat(sender.value)
     }
     
     //MARK: IBActions
@@ -84,6 +126,7 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
     func setupInitialState() {
         addCameraInView()
         setupPhotoGalleryButton()
+        setupImageOpacitySlider()
     }
 }
 
@@ -93,13 +136,19 @@ extension CoverlayCameraContainerViewController: UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let resultImage = info[.originalImage] as? UIImage
 
-        if picker.sourceType == .photoLibrary {
-            createImageView()
-            coverImageView.image = resultImage?.withAlphaComponent(0.5)
+        switch picker.sourceType {
+        case .photoLibrary:
+            displayOverlayImage(resultImage)
+            
+        case .camera:
+            enableOverlayOpacitySlider(false)
+            output.cameraDidFinish(with: resultImage)
+            
+        default:
+            break
         }
         
         picker.dismiss(animated: false)
-        output.cameraDidFinish(with: resultImage)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

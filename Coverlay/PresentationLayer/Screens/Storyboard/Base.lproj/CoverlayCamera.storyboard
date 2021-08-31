@@ -86,12 +86,20 @@
                                     <action selector="didTapPhotoGalleryButton:" destination="RcH-LK-k2X" eventType="touchUpInside" id="WRl-M0-p8q"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-dx-PNG">
+                                <rect key="frame" x="287" y="405" width="214" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="f22-xu-M9i"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GFX-ff-Eyu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9Gx-dx-PNG" firstAttribute="centerX" secondItem="GFX-ff-Eyu" secondAttribute="trailing" constant="-20" id="1FS-xz-Iea"/>
                             <constraint firstItem="mbb-z1-Xiv" firstAttribute="top" secondItem="GFX-ff-Eyu" secondAttribute="top" id="3vm-wj-Sxg"/>
                             <constraint firstItem="GFX-ff-Eyu" firstAttribute="trailing" secondItem="mbb-z1-Xiv" secondAttribute="trailing" id="Q3z-Hb-O8I"/>
+                            <constraint firstItem="9Gx-dx-PNG" firstAttribute="centerY" secondItem="mbb-z1-Xiv" secondAttribute="centerY" constant="-50" id="TBj-ph-Bog"/>
                             <constraint firstItem="GFX-ff-Eyu" firstAttribute="trailing" secondItem="pXK-xZ-L17" secondAttribute="trailing" constant="3" id="VT7-pq-0uC"/>
                             <constraint firstItem="pXK-xZ-L17" firstAttribute="top" secondItem="mbb-z1-Xiv" secondAttribute="top" constant="32" id="YzJ-3C-tTX"/>
                             <constraint firstItem="mbb-z1-Xiv" firstAttribute="leading" secondItem="GFX-ff-Eyu" secondAttribute="leading" id="eSu-wW-uKv"/>
@@ -101,6 +109,7 @@
                     <navigationItem key="navigationItem" id="X2n-tH-mPa"/>
                     <connections>
                         <outlet property="cameraContainerView" destination="mbb-z1-Xiv" id="Cwa-wz-zyT"/>
+                        <outlet property="overlayOpacitySlider" destination="9Gx-dx-PNG" id="CBI-VP-bOl"/>
                         <outlet property="photoGalleryButton" destination="pXK-xZ-L17" id="WwF-67-9im"/>
                     </connections>
                 </viewController>
