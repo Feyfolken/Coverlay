@@ -50,8 +50,9 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
             
             cameraContainerView.addSubview((imagePickers?.view)!)
             imagePickers?.view.frame = cameraContainerView.bounds
-            imagePickers?.allowsEditing = true
+            imagePickers?.allowsEditing = false
             imagePickers?.showsCameraControls = true
+            
             imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
         }
     }
@@ -64,9 +65,20 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     
     private func createImageView() {
         guard let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "CAMPreviewView") else { return }
-        
+
+        removePreviousOverlay()
         coverImageView = UIImageView(frame: cameraPreview.frame)
+        coverImageView.contentMode = .scaleAspectFit
+        coverImageView.frame = cameraPreview.frame
+        
         cameraContainerView.addSubview(coverImageView)
+    }
+    
+    private func removePreviousOverlay() {
+        if coverImageView != nil {
+            coverImageView.removeFromSuperview()
+            coverImageView = nil
+        }
     }
     
     private func setupImageOpacitySlider() {
@@ -86,8 +98,9 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         } else {
             overlayOpacitySlider.isUserInteractionEnabled = false
             overlayOpacitySlider.isHidden = true
-            overlayOpacitySlider.value = 0.5
         }
+        
+        overlayOpacitySlider.value = 0.5
     }
     
     private func displayOverlayImage(_ image: UIImage?) {
@@ -96,6 +109,12 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         createImageView()
         coverImageView.image = rawImage
         coverImageView.alpha = 0.5
+        coverImageView.isUserInteractionEnabled = true
+        
+        coverImageView.becomeGestureTransformable(isDraggable: true,
+                                                  isRotatable: true,
+                                                  isResizable: true,
+                                                  gestureRecognizerDelegate: self)
         
         enableOverlayOpacitySlider(true)
     }
@@ -111,11 +130,11 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     //MARK: IBActions
     @IBAction func didTapPhotoGalleryButton(_ sender: Any) {
         let imagePicker = UIImagePickerController()
-        
+
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = true
-        
+        imagePicker.allowsEditing = false
+
         present(imagePicker, animated: true)
     }
 }
@@ -158,3 +177,6 @@ extension CoverlayCameraContainerViewController: UIImagePickerControllerDelegate
     }
 }
 
+extension CoverlayCameraContainerViewController: UIGestureRecognizerDelegate {
+    
+}
