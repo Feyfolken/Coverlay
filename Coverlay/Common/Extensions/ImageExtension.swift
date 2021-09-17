@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - UIImage
 extension UIImage {
     
     func withAlphaComponent(_ alpha: CGFloat) -> UIImage? {
@@ -16,8 +17,22 @@ extension UIImage {
         draw(at: .zero, blendMode: .normal, alpha: alpha)
         return UIGraphicsGetImageFromCurrentImageContext()
     }
+    
+    func withColor(color: UIColor) -> UIImage {
+        var coloredImage = self.withRenderingMode(.alwaysTemplate)
+        
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        
+        color.set()
+        coloredImage.draw(in: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height))
+        coloredImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        return coloredImage
+    }
 }
 
+//MARK: - UIImageView
 extension UIImageView {
     
     func becomeGestureTransformable(isDraggable: Bool = true,
@@ -43,39 +58,31 @@ extension UIImageView {
         }
     }
     
-    //MARK: - Drag
+    //MARK: - Drag action
     @objc
     private func dragImageView(sender: UIPanGestureRecognizer) {
-        // Store current transfrom of UIImageView
-        let transform = self.transform
-        
-        // Initialize imageView.transform
+        let initialTransform = self.transform
         self.transform = CGAffineTransform.identity
         
-        // Move UIImageView
         let point: CGPoint = sender.translation(in: self)
         let movedPoint = CGPoint(x: self.center.x + point.x,
                                  y: self.center.y + point.y)
         self.center = movedPoint
+        self.transform = initialTransform
         
-        // Revert imageView.transform
-        self.transform = transform
-        
-        // Reset translation
         sender.setTranslation(CGPoint.zero, in: self)
     }
     
-    //MARK: - Rotate
+    //MARK: - Rotate action
     @objc
     private func rotateImageView(sender: UIRotationGestureRecognizer) {
         self.transform = self.transform.rotated(by: sender.rotation)
         sender.rotation = 0
     }
     
-    //MARK: - Resize
+    //MARK: - Resize action
     @objc
     private func resizeImageView(sender: UIPinchGestureRecognizer) {
-        print(sender.scale)
         self.transform = self.transform.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1.0
     }

@@ -25,7 +25,13 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
     }
     
     func cameraDidFinish(with resultImage: UIImage?) {
+        view.enableOverlayOpacitySlider(false)
 //        router.closeModule()
+    }
+    
+    func didSelectImageFromLibrary(_ image: UIImage?) {
+        view.displayOverlayImage(image)
+        view.enableOverlayOpacitySlider(true)
     }
 }
 
