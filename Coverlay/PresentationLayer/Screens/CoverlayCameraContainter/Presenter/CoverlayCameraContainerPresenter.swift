@@ -12,6 +12,11 @@ final class CoverlayCameraContainerPresenter {
     weak var view: CoverlayCameraContainerViewInput!
     var interactor: CoverlayCameraContainerInteractorInput!
     var router: CoverlayCameraContainerRouter!
+    
+    @objc
+    private func image(_ image: UIImage, didFinishSavingWithError err: Error?, contextInfo: UnsafeRawPointer) {
+        
+    }
 }
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerModuleInput {
@@ -25,8 +30,13 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
     }
     
     func cameraDidFinish(with resultImage: UIImage?) {
+        guard let rawImage = resultImage else {
+            router.closeModule()
+            return
+        }
+        
+        UIImageWriteToSavedPhotosAlbum(rawImage, self, nil, nil)
         view.enableOverlayOpacitySlider(false)
-//        router.closeModule()
     }
     
     func didSelectImageFromLibrary(_ image: UIImage?) {
