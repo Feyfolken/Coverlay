@@ -73,13 +73,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-z1-Xiv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GFX-ff-Eyu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mbb-z1-Xiv" firstAttribute="top" secondItem="GFX-ff-Eyu" secondAttribute="top" id="3vm-wj-Sxg"/>
+                            <constraint firstItem="mbb-z1-Xiv" firstAttribute="top" secondItem="0MO-S9-tHs" secondAttribute="top" id="3vm-wj-Sxg"/>
                             <constraint firstItem="GFX-ff-Eyu" firstAttribute="trailing" secondItem="mbb-z1-Xiv" secondAttribute="trailing" id="Q3z-Hb-O8I"/>
                             <constraint firstItem="mbb-z1-Xiv" firstAttribute="leading" secondItem="GFX-ff-Eyu" secondAttribute="leading" id="eSu-wW-uKv"/>
                             <constraint firstAttribute="bottom" secondItem="mbb-z1-Xiv" secondAttribute="bottom" id="jDg-Mo-3bi"/>

@@ -212,11 +212,11 @@ extension CoverlayCameraContainerViewController: UIImagePickerControllerDelegate
             break
         }
         
-        picker.dismiss(animated: false)
+        picker.dismiss(animated: true)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: false)
+        picker.dismiss(animated: true)
         
         output.cameraDidFinish(with: nil)
     }

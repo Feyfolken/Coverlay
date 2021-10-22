@@ -10,7 +10,8 @@ import UIKit
 final class MainScreenViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var openCameraModuleButton: NeumorphicCircleButton!
-    
+    private var openAboutAppModuleButton: NeumorphicCircleButton!
+
     var output: MainScreenViewOutput!
 
     // MARK: - Life cycle
@@ -35,6 +36,21 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
         openCameraModuleButton.setButtonImage(UIImage(named: "photo-camera")!)
         openCameraModuleButton.delegate = self
     }
+    
+    private func createOpenAboutAppModuleButton() {
+        openAboutAppModuleButton = NeumorphicCircleButton(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
+        
+        view.addSubview(openAboutAppModuleButton)
+        openAboutAppModuleButton.setButtonImage(UIImage(named: "info")!)
+
+        openAboutAppModuleButton.snp.makeConstraints { maker in
+            maker.centerX.equalToSuperview()
+            maker.bottom.equalTo(-60)
+            maker.height.width.equalTo(75)
+        }
+        
+        openAboutAppModuleButton.delegate = self
+    }
 }
 
 // MARK: - MainScreenViewInput
@@ -42,11 +58,13 @@ extension MainScreenViewController: MainScreenViewInput {
     
     func setupInitialState() {
         title = "Coverlay"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Carattere-Regular", size: 28)!]
         
         navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
         view.backgroundColor = .mainScreenBackgroundColor
 
         createOpenCameraModuleButton()
+        createOpenAboutAppModuleButton()
     }
 }
 
