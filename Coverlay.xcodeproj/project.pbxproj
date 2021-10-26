@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020D5F6E8113261130CD021D /* AboutAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9051634B5562C28FF5F71C5 /* AboutAppRouter.swift */; };
+		0351D1EFDBBDBDFF4386B628 /* AboutAppModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7354B73C5BED6F2F368EA12 /* AboutAppModuleInput.swift */; };
+		0C00D735DC305F765AA7FB1E /* AboutAppAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A1367A87F75C28623E5207 /* AboutAppAssemblyContainer.swift */; };
+		0C2ED6DB58B7CFD951117804 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3587C90384F29E960E7A2C /* AboutAppViewController.swift */; };
+		1A3538F0DCB037736633749C /* AboutAppViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B24D4B3C15EC3026635B47 /* AboutAppViewOutput.swift */; };
+		328C2CF53F0419E95AD6D4E7 /* AboutAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F14D8D70B971A6932D835 /* AboutAppInteractor.swift */; };
 		3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E542C202722FC7A0000D137 /* FontExtension.swift */; };
 		3E542C222722FEDB0000D137 /* Carattere-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E542C1F2722FB950000D137 /* Carattere-Regular.ttf */; };
 		3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */; };
@@ -42,10 +48,16 @@
 		3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */; };
 		3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E026AB204000AD50FF /* Assets.xcassets */; };
 		3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA8D7E226AB204000AD50FF /* LaunchScreen.storyboard */; };
+		7104D6247BF213E52C20F854 /* AboutAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367CC05D63404B4B79FDCF3 /* AboutAppPresenter.swift */; };
 		9AB0EF0E7E78C804538AC5C8 /* Pods_Coverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */; };
+		ACABCA507BF0E6262DF34084 /* AboutAppRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C00F92EE4754621F6A6930 /* AboutAppRouterInput.swift */; };
+		B26F7B1513011AD1C0A9DB5A /* AboutAppViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DC5156EE7EB6846696CAA /* AboutAppViewInput.swift */; };
+		BCDE67CB6A61C0E0AEED1350 /* AboutAppInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF52B1BF873F7E606047618 /* AboutAppInteractorOutput.swift */; };
+		F92DEBB000E5B93E8236ACC0 /* AboutAppInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F96DEAFC31ABCF4DA99146 /* AboutAppInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8DC5156EE7EB6846696CAA /* AboutAppViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppViewInput.swift; sourceTree = "<group>"; };
 		3E542C1F2722FB950000D137 /* Carattere-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Carattere-Regular.ttf"; sourceTree = "<group>"; };
 		3E542C202722FC7A0000D137 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleAssembly.swift; sourceTree = "<group>"; };
@@ -82,9 +94,19 @@
 		3EA8D7DE26AB203600AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CoverlayCamera.storyboard; sourceTree = "<group>"; };
 		3EA8D7E026AB204000AD50FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EA8D7E326AB204000AD50FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47A1367A87F75C28623E5207 /* AboutAppAssemblyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppAssemblyContainer.swift; sourceTree = "<group>"; };
+		5367CC05D63404B4B79FDCF3 /* AboutAppPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppPresenter.swift; sourceTree = "<group>"; };
 		572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3D04F99E7D5046A9BD4EA /* Pods-Coverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.debug.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.debug.xcconfig"; sourceTree = "<group>"; };
+		65C00F92EE4754621F6A6930 /* AboutAppRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppRouterInput.swift; sourceTree = "<group>"; };
 		A22A36249540FE738775BC91 /* Pods-Coverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coverlay.release.xcconfig"; path = "Target Support Files/Pods-Coverlay/Pods-Coverlay.release.xcconfig"; sourceTree = "<group>"; };
+		C7354B73C5BED6F2F368EA12 /* AboutAppModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppModuleInput.swift; sourceTree = "<group>"; };
+		C9051634B5562C28FF5F71C5 /* AboutAppRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppRouter.swift; sourceTree = "<group>"; };
+		CC3587C90384F29E960E7A2C /* AboutAppViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		CE8F14D8D70B971A6932D835 /* AboutAppInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppInteractor.swift; sourceTree = "<group>"; };
+		E7B24D4B3C15EC3026635B47 /* AboutAppViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppViewOutput.swift; sourceTree = "<group>"; };
+		E8F96DEAFC31ABCF4DA99146 /* AboutAppInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppInteractorInput.swift; sourceTree = "<group>"; };
+		EDF52B1BF873F7E606047618 /* AboutAppInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppInteractorOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +317,7 @@
 		3EA8D7EF26AB20FE00AD50FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E47E53DD3245E9F2B9C1EA28 /* AboutApp */,
 				3E780AE826B4221000F31D17 /* CoverlayMainScreen */,
 				3E66E08E26D69036009C22A7 /* CoverlayCameraContainter */,
 				3EA8D7F126AB224000AD50FF /* Storyboard */,
@@ -309,6 +332,14 @@
 				3E780B0226B430A600F31D17 /* MainModuleStoryboardConstants.swift */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		51F9450866E0C25FFE8FF661 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				47A1367A87F75C28623E5207 /* AboutAppAssemblyContainer.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		56BF23B43142B1E86B8A66C1 /* Pods */ = {
@@ -326,6 +357,56 @@
 				572F1F2E55C62D3F6F0DCBEB /* Pods_Coverlay.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BFE401115633B50B1994B7B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7354B73C5BED6F2F368EA12 /* AboutAppModuleInput.swift */,
+				5367CC05D63404B4B79FDCF3 /* AboutAppPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7F0A6AE076469DC193011621 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				65C00F92EE4754621F6A6930 /* AboutAppRouterInput.swift */,
+				C9051634B5562C28FF5F71C5 /* AboutAppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		93E811B2F90DEE39ED3B751D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E8F96DEAFC31ABCF4DA99146 /* AboutAppInteractorInput.swift */,
+				EDF52B1BF873F7E606047618 /* AboutAppInteractorOutput.swift */,
+				CE8F14D8D70B971A6932D835 /* AboutAppInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B23ED2A82A2DE57EF1B2EAD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B8DC5156EE7EB6846696CAA /* AboutAppViewInput.swift */,
+				E7B24D4B3C15EC3026635B47 /* AboutAppViewOutput.swift */,
+				CC3587C90384F29E960E7A2C /* AboutAppViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E47E53DD3245E9F2B9C1EA28 /* AboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				51F9450866E0C25FFE8FF661 /* Assembly */,
+				B23ED2A82A2DE57EF1B2EAD9 /* View */,
+				7BFE401115633B50B1994B7B /* Presenter */,
+				93E811B2F90DEE39ED3B751D /* Interactor */,
+				7F0A6AE076469DC193011621 /* Router */,
+			);
+			path = AboutApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +555,17 @@
 				3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */,
 				3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */,
 				3E66E0A126D69036009C22A7 /* CoverlayCameraContainerPresenter.swift in Sources */,
+				0C00D735DC305F765AA7FB1E /* AboutAppAssemblyContainer.swift in Sources */,
+				B26F7B1513011AD1C0A9DB5A /* AboutAppViewInput.swift in Sources */,
+				1A3538F0DCB037736633749C /* AboutAppViewOutput.swift in Sources */,
+				0C2ED6DB58B7CFD951117804 /* AboutAppViewController.swift in Sources */,
+				0351D1EFDBBDBDFF4386B628 /* AboutAppModuleInput.swift in Sources */,
+				7104D6247BF213E52C20F854 /* AboutAppPresenter.swift in Sources */,
+				F92DEBB000E5B93E8236ACC0 /* AboutAppInteractorInput.swift in Sources */,
+				BCDE67CB6A61C0E0AEED1350 /* AboutAppInteractorOutput.swift in Sources */,
+				328C2CF53F0419E95AD6D4E7 /* AboutAppInteractor.swift in Sources */,
+				ACABCA507BF0E6262DF34084 /* AboutAppRouterInput.swift in Sources */,
+				020D5F6E8113261130CD021D /* AboutAppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--About App View Controller-->
         <scene sceneID="dpP-sK-Bgw">
             <objects>
-                <viewController id="mmZ-M5-KOl" sceneMemberID="viewController">
+                <viewController id="mmZ-M5-KOl" customClass="AboutAppViewController" customModule="Coverlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fD9-l3-Ppf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
