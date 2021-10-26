@@ -21,6 +21,10 @@ extension MainScreenPresenter: MainScreenViewOutput {
     func didTapOpenCameraModuleButton() {
         router.openCameraModule()
     }
+    
+    func didTapOpenAboutAppModuleButton() {
+        router.openAboutAppModule()
+    }
 }
 
 extension MainScreenPresenter: MainScreenInteractorOutput {

@@ -39,6 +39,7 @@
                     <connections>
                         <outlet property="openCameraModuleButton" destination="XnB-Wy-0eg" id="Bex-fg-HSi"/>
                         <segue destination="RcH-LK-k2X" kind="presentation" identifier="mainScreenModuleToContainerModule" modalPresentationStyle="fullScreen" id="SXn-qO-qpw"/>
+                        <segue destination="mmZ-M5-KOl" kind="presentation" identifier="mainScreenToAboutAppModule" id="vAM-OW-orG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,6 +94,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxn-Sc-avb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dpP-sK-Bgw">
+            <objects>
+                <viewController id="mmZ-M5-KOl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fD9-l3-Ppf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dkT-Yp-6Wm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9I-Sx-AMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="800"/>
         </scene>
     </scenes>
     <resources>

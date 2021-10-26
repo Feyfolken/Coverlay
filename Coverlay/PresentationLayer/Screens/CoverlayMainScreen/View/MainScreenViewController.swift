@@ -72,6 +72,15 @@ extension MainScreenViewController: MainScreenViewInput {
 extension MainScreenViewController: NeumorphicCircleButtonDelegate {
     
     func didTapNeumorphicCircleButton(_ button: NeumorphicCircleButton) {
-        output.didTapOpenCameraModuleButton()
+        switch button {
+        case openAboutAppModuleButton:
+            output.didTapOpenAboutAppModuleButton()
+            
+        case openCameraModuleButton:
+            output.didTapOpenCameraModuleButton()
+            
+        default:
+            break
+        }
     }
 }

@@ -20,4 +20,12 @@ extension MainScreenRouterImplementation: MainScreenRouter {
                                             return nil
         }
     }
+    
+    func openAboutAppModule() {
+        try! transitionHandler.forSegue(identifier: MainModuleStoryboardConstants.mainScreenToAboutAppModule,
+                                        to: CoverlayCameraContainerModuleInput.self).then { moduleInput in
+                                            return nil
+        }
+    }
 }
+

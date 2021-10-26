@@ -9,4 +9,5 @@ protocol MainScreenViewOutput {
     
     func viewIsReady()
     func didTapOpenCameraModuleButton()
+    func didTapOpenAboutAppModuleButton()
 }

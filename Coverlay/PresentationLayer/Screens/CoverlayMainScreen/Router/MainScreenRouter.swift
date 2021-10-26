@@ -8,4 +8,5 @@
 protocol MainScreenRouter {
     
     func openCameraModule()
+    func openAboutAppModule()
 }
