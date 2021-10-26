@@ -8,12 +8,12 @@
 import UIKit
 import SnapKit
 
-protocol NeumorphicCircleButtonDelegate: AnyObject {
+public protocol NeumorphicCircleButtonDelegate: AnyObject {
     
     func didTapNeumorphicCircleButton(_ button: NeumorphicCircleButton)
 }
 
-final class NeumorphicCircleButton: UIView {
+final public class NeumorphicCircleButton: UIView {
     
     public weak var delegate: NeumorphicCircleButtonDelegate?
     public var buttonImageView: UIImageView?

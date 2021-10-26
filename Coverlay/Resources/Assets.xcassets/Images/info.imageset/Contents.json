@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "photo-camera-1.png",
+      "filename" : "info.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,12 +12,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "photo-camera.png",
+      "filename" : "info-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "photo-camera-4.png",
+      "filename" : "info-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -28,12 +28,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "photo-camera-2.png",
+      "filename" : "info-4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "photo-camera-5.png",
+      "filename" : "info-3.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -44,7 +44,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "photo-camera-3.png",
+      "filename" : "info-5.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

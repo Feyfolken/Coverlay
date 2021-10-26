@@ -7,4 +7,5 @@
 
 enum MainModuleStoryboardConstants {
     static let mainScreenModuleToContainerModule = "mainScreenModuleToContainerModule"
+    static let mainScreenToAboutAppModule = "mainScreenToAboutAppModule"
 }

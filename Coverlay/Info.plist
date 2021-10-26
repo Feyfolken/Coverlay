@@ -62,7 +62,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need acces to the photo gallery so you can save photos</string>
 	<key>NSCameraUsageDescription</key>
 	<string>To use this app you need to give an access to the camera</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Carattere-Regular.ttf</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To use this app you need to give an access to the photo gallery</string>
 </dict>
 </plist>
