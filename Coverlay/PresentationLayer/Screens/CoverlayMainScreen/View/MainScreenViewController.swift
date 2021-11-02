@@ -51,18 +51,21 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
         
         openAboutAppModuleButton.delegate = self
     }
+    
+    private func setupNavigationBar() {
+        title = "Coverlay"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Carattere-Regular", size: 28)!]
+        navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
+    }
 }
 
 // MARK: - MainScreenViewInput
 extension MainScreenViewController: MainScreenViewInput {
     
     func setupInitialState() {
-        title = "Coverlay"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Carattere-Regular", size: 28)!]
-        
-        navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
         view.backgroundColor = .mainScreenBackgroundColor
 
+        setupNavigationBar()
         createOpenCameraModuleButton()
         createOpenAboutAppModuleButton()
     }

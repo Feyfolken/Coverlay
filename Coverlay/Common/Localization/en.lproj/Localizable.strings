@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MVP.Ural-FD
+
+  Created by Feyfolken on 12.03.2021.
+  Copyright © 2021 Diasoft. All rights reserved.
+*/
+
+//MARK: - Global localizable strings
+
+"cancel" = "Cancel";
+"warningAlertTitle" = "Warning";
+"errorTitle" = "Error";
+
+
+"yesText" = "Yes";
+"noText" = "No";
+

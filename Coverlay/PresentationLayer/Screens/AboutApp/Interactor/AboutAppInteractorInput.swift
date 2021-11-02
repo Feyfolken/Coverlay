@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AboutAppInteractorInput {
-
+    func obtainOnboardingInfo() -> [OnboardingInfo]
 }

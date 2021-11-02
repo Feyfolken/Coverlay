@@ -8,5 +8,6 @@
 
 protocol AboutAppViewInput: AnyObject {
 
-    func setupInitialState()
+    func setupInitialState(for onboardingInfoList: [OnboardingInfo])
 }
+

@@ -20,7 +20,8 @@ extension AboutAppPresenter: AboutAppModuleInput {
 extension AboutAppPresenter: AboutAppViewOutput {
     
     func viewIsReady() {
-        view.setupInitialState()
+        let onboardingInfoList = interactor.obtainOnboardingInfo()
+        view.setupInitialState(for: onboardingInfoList)
     }
 }
 

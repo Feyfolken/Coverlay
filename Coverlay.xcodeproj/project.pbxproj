@@ -13,8 +13,18 @@
 		0C2ED6DB58B7CFD951117804 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3587C90384F29E960E7A2C /* AboutAppViewController.swift */; };
 		1A3538F0DCB037736633749C /* AboutAppViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B24D4B3C15EC3026635B47 /* AboutAppViewOutput.swift */; };
 		328C2CF53F0419E95AD6D4E7 /* AboutAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F14D8D70B971A6932D835 /* AboutAppInteractor.swift */; };
+		3E4452F627284EBB001A80E1 /* SignikaNegative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */; };
+		3E4452F8272856F2001A80E1 /* SignikaNegative-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */; };
+		3E4452FA272858C6001A80E1 /* SignikaNegative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */; };
+		3E445F82272C348600766A79 /* OnboardingInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E445F81272C348600766A79 /* OnboardingInfoCell.swift */; };
+		3E49C04D27296C62007970A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E49C04827296C62007970A8 /* Localizable.strings */; };
+		3E49C04E27296C62007970A8 /* GlobalLocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C04A27296C62007970A8 /* GlobalLocalizationConstants.swift */; };
+		3E49C04F27296C62007970A8 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C04C27296C62007970A8 /* Localizable.swift */; };
+		3E49C05327296D0C007970A8 /* AboutAppModuleLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E49C05527296D0C007970A8 /* AboutAppModuleLocalization.strings */; };
+		3E49C05827296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */; };
 		3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E542C202722FC7A0000D137 /* FontExtension.swift */; };
 		3E542C222722FEDB0000D137 /* Carattere-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E542C1F2722FB950000D137 /* Carattere-Regular.ttf */; };
+		3E58E5DB273180E90076F3DC /* OnboardingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */; };
 		3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */; };
 		3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */; };
 		3E66E0A126D69036009C22A7 /* CoverlayCameraContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */; };
@@ -58,8 +68,20 @@
 
 /* Begin PBXFileReference section */
 		1B8DC5156EE7EB6846696CAA /* AboutAppViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppViewInput.swift; sourceTree = "<group>"; };
+		3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Regular.ttf"; sourceTree = "<group>"; };
+		3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-SemiBold.ttf"; sourceTree = "<group>"; };
+		3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Bold.ttf"; sourceTree = "<group>"; };
+		3E445F81272C348600766A79 /* OnboardingInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoCell.swift; sourceTree = "<group>"; };
+		3E49C04927296C62007970A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E49C04A27296C62007970A8 /* GlobalLocalizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalLocalizationConstants.swift; sourceTree = "<group>"; };
+		3E49C04B27296C62007970A8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3E49C04C27296C62007970A8 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		3E49C05427296D0C007970A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AboutAppModuleLocalization.strings; sourceTree = "<group>"; };
+		3E49C05627296D0F007970A8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AboutAppModuleLocalization.strings; sourceTree = "<group>"; };
+		3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppModuleLocalizationConstants.swift; sourceTree = "<group>"; };
 		3E542C1F2722FB950000D137 /* Carattere-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Carattere-Regular.ttf"; sourceTree = "<group>"; };
 		3E542C202722FC7A0000D137 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfo.swift; sourceTree = "<group>"; };
 		3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleAssembly.swift; sourceTree = "<group>"; };
 		3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleInput.swift; sourceTree = "<group>"; };
 		3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerPresenter.swift; sourceTree = "<group>"; };
@@ -121,6 +143,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E49C04727296C62007970A8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3E49C04827296C62007970A8 /* Localizable.strings */,
+				3E49C04A27296C62007970A8 /* GlobalLocalizationConstants.swift */,
+				3E49C04C27296C62007970A8 /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		3E49C05027296CE1007970A8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3E49C05527296D0C007970A8 /* AboutAppModuleLocalization.strings */,
+				3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		3E58E5D9273180D80076F3DC /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
 		3E66E08E26D69036009C22A7 /* CoverlayCameraContainter */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				3E780B0A26B4540100F31D17 /* NeumorphicCircleButton.swift */,
+				3E445F81272C348600766A79 /* OnboardingInfoCell.swift */,
 				3E66E0AA26D69267009C22A7 /* ContainerViewEmbedSegue.swift */,
 			);
 			path = Classes;
@@ -288,6 +338,8 @@
 		3EA8D7EC26AB206D00AD50FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3E58E5D9273180D80076F3DC /* Structures */,
+				3E49C04727296C62007970A8 /* Localization */,
 				3E780B0926B453F500F31D17 /* Classes */,
 				3E780B0626B4516800F31D17 /* Extensions */,
 				3EA8D7D726AB203600AD50FF /* AppDelegate.swift */,
@@ -301,6 +353,9 @@
 			isa = PBXGroup;
 			children = (
 				3E542C1F2722FB950000D137 /* Carattere-Regular.ttf */,
+				3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */,
+				3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */,
+				3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */,
 				3EA8D7E026AB204000AD50FF /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -400,6 +455,7 @@
 		E47E53DD3245E9F2B9C1EA28 /* AboutApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E49C05027296CE1007970A8 /* Localization */,
 				51F9450866E0C25FFE8FF661 /* Assembly */,
 				B23ED2A82A2DE57EF1B2EAD9 /* View */,
 				7BFE401115633B50B1994B7B /* Presenter */,
@@ -452,6 +508,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3EA8D7CB26AB203600AD50FF;
 			productRefGroup = 3EA8D7D526AB203600AD50FF /* Products */;
@@ -468,8 +525,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E49C05327296D0C007970A8 /* AboutAppModuleLocalization.strings in Resources */,
 				3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */,
+				3E4452F8272856F2001A80E1 /* SignikaNegative-SemiBold.ttf in Resources */,
 				3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */,
+				3E4452F627284EBB001A80E1 /* SignikaNegative-Regular.ttf in Resources */,
+				3E4452FA272858C6001A80E1 /* SignikaNegative-Bold.ttf in Resources */,
+				3E49C04D27296C62007970A8 /* Localizable.strings in Resources */,
 				3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */,
 				3E542C222722FEDB0000D137 /* Carattere-Regular.ttf in Resources */,
 			);
@@ -524,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E49C04E27296C62007970A8 /* GlobalLocalizationConstants.swift in Sources */,
 				3E780AFF26B422AD00F31D17 /* MainScreenRouter.swift in Sources */,
 				3E6EAD1F26D95E5800DB587B /* NSObjectExtension.swift in Sources */,
 				3E66E0A626D69036009C22A7 /* CoverlayCameraContainerInteractorOutput.swift in Sources */,
@@ -533,6 +596,7 @@
 				3E66E0A326D69036009C22A7 /* CoverlayCameraContainerViewController.swift in Sources */,
 				3E66E0A926D69036009C22A7 /* CoverlayCameraContainerRouter.swift in Sources */,
 				3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */,
+				3E445F82272C348600766A79 /* OnboardingInfoCell.swift in Sources */,
 				3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */,
 				3E66E0A226D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift in Sources */,
 				3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */,
@@ -545,6 +609,8 @@
 				3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */,
 				3EA8D7D826AB203600AD50FF /* AppDelegate.swift in Sources */,
 				3E780AF126B4226600F31D17 /* MainScreenViewController.swift in Sources */,
+				3E58E5DB273180E90076F3DC /* OnboardingInfo.swift in Sources */,
+				3E49C04F27296C62007970A8 /* Localizable.swift in Sources */,
 				3E780AFB26B4229500F31D17 /* MainScreenInteractorInput.swift in Sources */,
 				3E66E0A526D69036009C22A7 /* CoverlayCameraContainerInteractor.swift in Sources */,
 				3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */,
@@ -554,6 +620,7 @@
 				3EA8D7DA26AB203600AD50FF /* SceneDelegate.swift in Sources */,
 				3E66E0A826D69036009C22A7 /* CoverlayCameraContainerRouterImplementation.swift in Sources */,
 				3E780AF926B4228C00F31D17 /* MainScreenInteractor.swift in Sources */,
+				3E49C05827296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift in Sources */,
 				3E66E0A126D69036009C22A7 /* CoverlayCameraContainerPresenter.swift in Sources */,
 				0C00D735DC305F765AA7FB1E /* AboutAppAssemblyContainer.swift in Sources */,
 				B26F7B1513011AD1C0A9DB5A /* AboutAppViewInput.swift in Sources */,
@@ -572,6 +639,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3E49C04827296C62007970A8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E49C04927296C62007970A8 /* en */,
+				3E49C04B27296C62007970A8 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3E49C05527296D0C007970A8 /* AboutAppModuleLocalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E49C05427296D0C007970A8 /* en */,
+				3E49C05627296D0F007970A8 /* ru */,
+			);
+			name = AboutAppModuleLocalization.strings;
+			sourceTree = "<group>";
+		};
 		3EA8D7DD26AB203600AD50FF /* CoverlayCamera.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

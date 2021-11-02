@@ -6,6 +6,6 @@
 //  Copyright © 2021 Feyfolken. All rights reserved.
 //
 
-protocol AboutAppModuleInput: class {
+protocol AboutAppModuleInput: AnyObject {
 
 }
