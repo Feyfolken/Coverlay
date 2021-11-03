@@ -9,8 +9,8 @@ import UIKit
 
 public extension UIFont {
     
-    static func carattereRegularFontWithSize(fontSize: CGFloat) -> UIFont {
-        return UIFont(name: "Carattere-Regular", size: fontSize)!
+    static func comfortaaLightFontWithSize(fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "Comfortaa-Light", size: fontSize)!
     }
     
     static func signikaNegativeBoldFontWithSize(fontSize: CGFloat) -> UIFont {

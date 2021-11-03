@@ -9,8 +9,9 @@
 "generalDescriptionText" = "The application allows you to take a photo by overlaying any photo from the gallery on top of the main camera preview. Want to take a picture of your favorite landscape from the same vantage point, but at different times of the year? Or maybe find a place by photo? Probably repeat an old family photo years later? All this is now easy with Coverlay!";
 "authorshipText" = "Vadim Krasilnikov © 2021";
 
-"firstOnboardingInfoMessage" = "Press the camera button on the main screen to start.";
-"secondOnboardingInfoMessage" = "Add any photo from your phone as an overlay on top of the camera preview by clicking the gallery button.";
-"thirdOnboardingInfoMessage" = "Use the transparency control slider to make the overlay as transparent as you like.";
-"fourthOnboardingInfoMessage" = "Using gestures will allow you to move, resize and flip overlaying photo horizontally.";
-"fifthOnboardingInfoMessage" = "Successful pictures can be saved to the gallery on the device.";
+"cameraCardMessage" = "Press the camera button on the main screen to start.";
+"galleryCardMessage" = "Add any photo from your phone as an overlay on top of the camera preview by clicking the gallery button.";
+"transparencyCardMessage" = "Use the transparency control slider to make the overlay as transparent as you like.";
+"intersectionCardMessage" = "Aim the camera so that the images match as much as possible.";
+"gesturesCardMessage" = "Using gestures will allow you to move, resize and flip overlaying photo horizontally.";
+"saveCardMessage" = "Successfully taken pictures can be saved to the gallery on the device.";

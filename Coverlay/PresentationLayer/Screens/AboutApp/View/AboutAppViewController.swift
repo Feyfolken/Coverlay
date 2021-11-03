@@ -85,7 +85,8 @@ final class AboutAppViewController: UIViewController {
             make.top.greaterThanOrEqualToSuperview().priority(.medium)
             make.bottom.greaterThanOrEqualToSuperview().priority(.medium)
             make.centerY.equalTo(collectionViewContainer.snp.centerY)
-            make.height.equalTo(250)
+            make.height.equalToSuperview().multipliedBy(0.8).priority(.medium)
+            make.height.greaterThanOrEqualTo(250)
         }
     }
 }
@@ -135,7 +136,7 @@ extension AboutAppViewController: UICollectionViewDataSource {
 extension AboutAppViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 190, height: collectionView.frame.height - 30)
+        return CGSize(width: collectionView.frame.width / 1.75, height: collectionView.frame.height - 30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

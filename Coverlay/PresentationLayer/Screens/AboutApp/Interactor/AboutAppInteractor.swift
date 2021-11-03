@@ -17,16 +17,19 @@ extension AboutAppInteractor: AboutAppInteractorInput {
     func obtainOnboardingInfo() -> [OnboardingInfo] {
         var onboardingInfoList = [OnboardingInfo]()
         
-        let firstOnboardingInfoObject = OnboardingInfo(infoIcon: UIImage(named: "photo-camera"), infoMessage: AboutAppModuleLocalizationConstants.firstOnboardingInfoMessage.localized)
-        let secondOnboardingInfoObject = OnboardingInfo(infoIcon: UIImage(named: "gallery-card"), infoMessage: AboutAppModuleLocalizationConstants.secondOnboardingInfoMessage.localized)
-        let thirdOnboardingInfoObject = OnboardingInfo(infoIcon: UIImage(named: "transparency-card"), infoMessage: AboutAppModuleLocalizationConstants.thirdOnboardingInfoMessage.localized)
-        let fourthOnboardingInfoObject = OnboardingInfo(infoIcon: UIImage(named: "gesture-card"), infoMessage: AboutAppModuleLocalizationConstants.fourthOnboardingInfoMessage.localized)
-        let fifthOnboardingInfoObject = OnboardingInfo(infoIcon: UIImage(named: "saveOnDevice-card"), infoMessage: AboutAppModuleLocalizationConstants.fifthOnboardingInfoMessage.localized)
-        onboardingInfoList = [firstOnboardingInfoObject,
-                              secondOnboardingInfoObject,
-                              thirdOnboardingInfoObject,
-                              fourthOnboardingInfoObject,
-                              fifthOnboardingInfoObject]
+        let cameraCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "photo-camera"), infoMessage: AboutAppModuleLocalizationConstants.cameraCardMessage.localized)
+        let galleryCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "gallery-card"), infoMessage: AboutAppModuleLocalizationConstants.galleryCardMessage.localized)
+        let transparencyCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "transparency-card"), infoMessage: AboutAppModuleLocalizationConstants.transparencyCardMessage.localized)
+        let intersectionCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "intersect-card"), infoMessage: AboutAppModuleLocalizationConstants.intersectionCardMessage.localized)
+        let gesturesCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "gesture-card"), infoMessage: AboutAppModuleLocalizationConstants.gesturesCardMessage.localized)
+        let saveCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "saveOnDevice-card"), infoMessage: AboutAppModuleLocalizationConstants.saveCardMessage.localized)
+        
+        onboardingInfoList = [cameraCardInfoObject,
+                              galleryCardInfoObject,
+                              transparencyCardInfoObject,
+                              intersectionCardInfoObject,
+                              gesturesCardInfoObject,
+                              saveCardInfoObject]
         
         return onboardingInfoList
     }

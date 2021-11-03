@@ -10,11 +10,12 @@ public enum AboutAppModuleLocalizationConstants: String {
     case generalDescriptionText
     case authorshipText
     
-    case firstOnboardingInfoMessage
-    case secondOnboardingInfoMessage
-    case thirdOnboardingInfoMessage
-    case fourthOnboardingInfoMessage
-    case fifthOnboardingInfoMessage
+    case cameraCardMessage
+    case galleryCardMessage
+    case transparencyCardMessage
+    case intersectionCardMessage
+    case gesturesCardMessage
+    case saveCardMessage
 }
 
 extension AboutAppModuleLocalizationConstants: Localizable {
