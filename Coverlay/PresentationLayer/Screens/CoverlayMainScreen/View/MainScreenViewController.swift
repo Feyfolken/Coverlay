@@ -43,13 +43,19 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
         view.addSubview(openAboutAppModuleButton)
         openAboutAppModuleButton.setButtonImage(UIImage(named: "info")!)
 
-        openAboutAppModuleButton.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(-60)
-            maker.height.width.equalTo(75)
+        openAboutAppModuleButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(-40)
+            make.height.width.equalTo(75)
         }
         
         openAboutAppModuleButton.delegate = self
+    }
+    
+    private func setupNavigationBar() {
+        title = "Coverlay"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Comfortaa-Light", size: 25)!]
+        navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
     }
 }
 
@@ -57,12 +63,9 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
 extension MainScreenViewController: MainScreenViewInput {
     
     func setupInitialState() {
-        title = "Coverlay"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Carattere-Regular", size: 28)!]
-        
-        navigationController?.navigationBar.barTintColor = .mainScreenBackgroundColor
         view.backgroundColor = .mainScreenBackgroundColor
 
+        setupNavigationBar()
         createOpenCameraModuleButton()
         createOpenAboutAppModuleButton()
     }

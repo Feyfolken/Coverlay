@@ -68,7 +68,10 @@
 	<string>To use this app you need to give an access to the camera</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Carattere-Regular.ttf</string>
+		<string>Comfortaa-Light.ttf</string>
+		<string>SignikaNegative-Regular.ttf</string>
+		<string>SignikaNegative-SemiBold.ttf</string>
+		<string>SignikaNegative-Bold.ttf</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>

@@ -26,4 +26,10 @@ extension UIColor {
             return UIColor(named: "lightShadowColor") ?? .black
         }
     }
+    
+    static var commonTextColor: UIColor {
+        get {
+            return UIColor(named: "commonTextColor") ?? .black
+        }
+    }
 }
