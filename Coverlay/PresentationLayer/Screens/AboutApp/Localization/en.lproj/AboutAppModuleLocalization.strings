@@ -14,4 +14,5 @@
 "transparencyCardMessage" = "Use the transparency control slider to make the overlay as transparent as you like.";
 "intersectionCardMessage" = "Aim the camera so that the images match as much as possible.";
 "gesturesCardMessage" = "Using gestures will allow you to move, resize and flip overlaying photo horizontally.";
+"enableTransformationCardMessage" = "Pressing the lock button will fix the current position of the overlay photo by disabling gesture recognition. Spoiling a perfectly tuned overlay position by accidentally tapping it is no longer scary. Pressing it again will return the ability to change the shape, position and size of the overlaid image.";
 "saveCardMessage" = "Successfully taken pictures can be saved to the gallery on the device.";

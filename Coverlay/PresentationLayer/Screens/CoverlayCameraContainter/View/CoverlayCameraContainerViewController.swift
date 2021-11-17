@@ -50,7 +50,6 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
             imagePickers?.view.frame = cameraContainerView.bounds
             imagePickers?.allowsEditing = false
             imagePickers?.showsCameraControls = true
-            
             imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
         }
     }
@@ -78,19 +77,24 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     private func setupEnableImageTransformationButton() {
-        guard let superview = imagePickers?.view.findFirstSubview(withClassName: "CAMTopBar") else { return }
+        guard let superview = imagePickers?.view.findFirstSubview(withClassName: "CAMTopBar"),
+              enableImageTransformationButton == nil else { return }
         
         enableImageTransformationButton = UIButton()
-        enableImageTransformationButton.setImage(UIImage(named:"photo-gallery"), for: .normal)
+        enableImageTransformationButton.setImage(UIImage(named:"unlock_small")?.withColor(color: .white), for: .normal)
         enableImageTransformationButton.tintColor = .white
         enableImageTransformationButton.backgroundColor = .clear
+        enableImageTransformationButton.contentMode = .scaleAspectFit
+        enableImageTransformationButton.addTarget(self,
+                                     action: #selector(didTapEnableTransformationButton(_:)),
+                                     for: .touchUpInside)
         
         superview.addSubview(enableImageTransformationButton)
         
         enableImageTransformationButton.snp.makeConstraints { maker in
             maker.centerX.centerY.equalToSuperview()
-            maker.height.equalTo(42)
-            maker.width.equalTo(44)
+            maker.height.equalTo(30)
+            maker.width.equalTo(32)
         }
     }
     
@@ -120,7 +124,7 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     
     private func createNewOverlayImageView() {
         guard let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "CAMPreviewView") else { return }
-        
+        //PLImageView
         removePreviousOverlay()
         coverImageView = UIImageView(frame: cameraPreview.frame)
         coverImageView.contentMode = .scaleAspectFit
@@ -146,7 +150,7 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     @objc
-    func didTapPhotoGalleryButton(_ sender: Any) {
+    func didTapPhotoGalleryButton(_ sender: UIButton) {
         let imagePicker = UIImagePickerController()
         
         imagePicker.delegate = self
@@ -154,6 +158,11 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true)
+    }
+    
+    @objc
+    func didTapEnableTransformationButton(_ sender: UIButton) {
+        output.didTapEnableImageTransformationButton()
     }
 }
 
@@ -192,6 +201,14 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
         }
         
         overlayOpacitySlider.value = 0.5
+    }
+    
+    func setImageForEnableImageTransformationButton(_ image: UIImage) {
+        enableImageTransformationButton.setImage(image, for: .normal)
+    }
+    
+    func enableOverlayImageTransformation(_ isEnabled: Bool) {
+        coverImageView.isUserInteractionEnabled = isEnabled
     }
 }
 

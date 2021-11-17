@@ -11,4 +11,6 @@ protocol CoverlayCameraContainerViewInput: AnyObject {
     func setupInitialState()
     func displayOverlayImage(_ image: UIImage?)
     func enableOverlayOpacitySlider(_ isEnabled: Bool)
+    func enableOverlayImageTransformation(_ isEnabled: Bool)
+    func setImageForEnableImageTransformationButton(_ image: UIImage)
 }
