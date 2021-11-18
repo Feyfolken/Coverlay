@@ -77,8 +77,7 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     private func setupEnableImageTransformationButton() {
-        guard let superview = imagePickers?.view.findFirstSubview(withClassName: "CAMTopBar"),
-              enableImageTransformationButton == nil else { return }
+        guard enableImageTransformationButton == nil else { return }
         
         enableImageTransformationButton = UIButton()
         enableImageTransformationButton.setImage(UIImage(named:"unlock_small")?.withColor(color: .white), for: .normal)
@@ -89,10 +88,11 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
                                      action: #selector(didTapEnableTransformationButton(_:)),
                                      for: .touchUpInside)
         
-        superview.addSubview(enableImageTransformationButton)
+        view.addSubview(enableImageTransformationButton)
         
         enableImageTransformationButton.snp.makeConstraints { maker in
-            maker.centerX.centerY.equalToSuperview()
+            maker.centerX.equalToSuperview()
+            maker.top.equalToSuperview().offset(40)
             maker.height.equalTo(30)
             maker.width.equalTo(32)
         }
