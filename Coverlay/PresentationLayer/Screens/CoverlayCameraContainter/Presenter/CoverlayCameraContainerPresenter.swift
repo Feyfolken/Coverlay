@@ -10,9 +10,12 @@ import UIKit
 final class CoverlayCameraContainerPresenter {
     
     weak var view: CoverlayCameraContainerViewInput!
+    
     var interactor: CoverlayCameraContainerInteractorInput!
     var router: CoverlayCameraContainerRouter!
+
     private var isOverlayTransformationEnabled = true
+    private var currentlyChosenOverlayImage: UIImage!
 }
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerModuleInput {
@@ -36,6 +39,8 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
     }
     
     func didSelectImageFromLibrary(_ image: UIImage?) {
+        currentlyChosenOverlayImage = image
+        
         view.displayOverlayImage(image)
         view.enableOverlayOpacitySlider(true)
         
@@ -50,6 +55,15 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
         
         view.setImageForEnableImageTransformationButton(UIImage(named: imageName)!.withColor(color: .white))
         view.enableOverlayImageTransformation(isOverlayTransformationEnabled)
+    }
+    
+    func didTapRestoreOverlayImageFrameButton() {
+        isOverlayTransformationEnabled = true
+        
+        view.displayOverlayImage(currentlyChosenOverlayImage)
+        view.enableOverlayOpacitySlider(true)
+        view.enableOverlayImageTransformation(true)
+        view.setImageForEnableImageTransformationButton(UIImage(named: "unlock_small")!.withColor(color: .white))
     }
 }
 
