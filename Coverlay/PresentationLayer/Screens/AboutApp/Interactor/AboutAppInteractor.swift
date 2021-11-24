@@ -22,14 +22,18 @@ extension AboutAppInteractor: AboutAppInteractorInput {
         let transparencyCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "transparency-card"), infoMessage: AboutAppModuleLocalizationConstants.transparencyCardMessage.localized)
         let intersectionCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "intersect-card"), infoMessage: AboutAppModuleLocalizationConstants.intersectionCardMessage.localized)
         let gesturesCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "gesture-card"), infoMessage: AboutAppModuleLocalizationConstants.gesturesCardMessage.localized)
+        let restoreFrameInfoObject = OnboardingInfo(infoIcon: UIImage(named: "restoreFrame"), infoMessage: AboutAppModuleLocalizationConstants.restoreFrameCardMessage.localized)
         let enableTransformationCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "lock"), infoMessage: AboutAppModuleLocalizationConstants.enableTransformationCardMessage.localized)
         let saveCardInfoObject = OnboardingInfo(infoIcon: UIImage(named: "saveOnDevice-card"), infoMessage: AboutAppModuleLocalizationConstants.saveCardMessage.localized)
+
+        
         
         onboardingInfoList = [cameraCardInfoObject,
                               galleryCardInfoObject,
                               transparencyCardInfoObject,
                               intersectionCardInfoObject,
                               gesturesCardInfoObject,
+                              restoreFrameInfoObject,
                               enableTransformationCardInfoObject,
                               saveCardInfoObject]
         
