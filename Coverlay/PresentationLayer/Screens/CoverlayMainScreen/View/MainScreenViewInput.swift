@@ -8,4 +8,5 @@
 protocol MainScreenViewInput: AnyObject {
     
     func setupInitialState()
+    func showSaveSuccessAnimation()
 }

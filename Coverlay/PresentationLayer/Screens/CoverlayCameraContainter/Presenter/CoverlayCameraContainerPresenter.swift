@@ -10,6 +10,7 @@ import UIKit
 final class CoverlayCameraContainerPresenter {
     
     weak var view: CoverlayCameraContainerViewInput!
+    weak var moduleOutput: CoverlayCameraContainerModuleOutput!
     
     var interactor: CoverlayCameraContainerInteractorInput!
     var router: CoverlayCameraContainerRouter!
@@ -20,6 +21,9 @@ final class CoverlayCameraContainerPresenter {
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerModuleInput {
     
+    func configureModule(with moduleOutput: CoverlayCameraContainerModuleOutput) {
+        self.moduleOutput = moduleOutput
+    }
 }
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
@@ -36,6 +40,7 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
         
         UIImageWriteToSavedPhotosAlbum(rawImage, self, nil, nil)
         view.enableOverlayOpacitySlider(false)
+        moduleOutput.didSaveImageToLibrary()
     }
     
     func didSelectImageFromLibrary(_ image: UIImage?) {

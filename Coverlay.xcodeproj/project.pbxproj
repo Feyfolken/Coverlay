@@ -23,6 +23,9 @@
 		3E49C05827296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */; };
 		3E5356F32732D0AE00CE9A34 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */; };
 		3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E542C202722FC7A0000D137 /* FontExtension.swift */; };
+		3E57376B274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */; };
+		3E57376F274FD31700EF8A6B /* successAnimationLight.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E57376E274FD31700EF8A6B /* successAnimationLight.json */; };
+		3E573771274FD32B00EF8A6B /* successAnimationDark.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E573770274FD32B00EF8A6B /* successAnimationDark.json */; };
 		3E58E5DB273180E90076F3DC /* OnboardingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */; };
 		3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */; };
 		3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */; };
@@ -79,6 +82,9 @@
 		3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppModuleLocalizationConstants.swift; sourceTree = "<group>"; };
 		3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		3E542C202722FC7A0000D137 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleOutput.swift; sourceTree = "<group>"; };
+		3E57376E274FD31700EF8A6B /* successAnimationLight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successAnimationLight.json; sourceTree = "<group>"; };
+		3E573770274FD32B00EF8A6B /* successAnimationDark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successAnimationDark.json; sourceTree = "<group>"; };
 		3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfo.swift; sourceTree = "<group>"; };
 		3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleAssembly.swift; sourceTree = "<group>"; };
 		3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleInput.swift; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */,
+				3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */,
 				3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */,
 			);
 			path = Presenter;
@@ -350,6 +357,8 @@
 		3EA8D7ED26AB208100AD50FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E57376E274FD31700EF8A6B /* successAnimationLight.json */,
+				3E573770274FD32B00EF8A6B /* successAnimationDark.json */,
 				3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */,
 				3E46115A27468F680015B81D /* RobotoSlab-Regular.ttf */,
 				3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */,
@@ -524,12 +533,14 @@
 			files = (
 				3E46115B27468F680015B81D /* RobotoSlab-Regular.ttf in Resources */,
 				3E49C05327296D0C007970A8 /* AboutAppModuleLocalization.strings in Resources */,
+				3E573771274FD32B00EF8A6B /* successAnimationDark.json in Resources */,
 				3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */,
 				3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */,
 				3E5356F32732D0AE00CE9A34 /* Comfortaa-Light.ttf in Resources */,
 				3E4452FA272858C6001A80E1 /* SignikaNegative-Bold.ttf in Resources */,
 				3E49C04D27296C62007970A8 /* Localizable.strings in Resources */,
 				3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */,
+				3E57376F274FD31700EF8A6B /* successAnimationLight.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +605,7 @@
 				3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */,
 				3E445F82272C348600766A79 /* OnboardingInfoCell.swift in Sources */,
 				3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */,
+				3E57376B274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift in Sources */,
 				3E66E0A226D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift in Sources */,
 				3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */,
 				3E66E0A726D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift in Sources */,

@@ -19,7 +19,7 @@ extension MainScreenPresenter: MainScreenViewOutput {
     }
     
     func didTapOpenCameraModuleButton() {
-        router.openCameraModule()
+        router.openCameraModule(with: self)
     }
     
     func didTapOpenAboutAppModuleButton() {
@@ -29,4 +29,11 @@ extension MainScreenPresenter: MainScreenViewOutput {
 
 extension MainScreenPresenter: MainScreenInteractorOutput {
     
+}
+
+extension MainScreenPresenter: CoverlayCameraContainerModuleOutput {
+    
+    func didSaveImageToLibrary() {
+        view.showSaveSuccessAnimation()
+    }
 }

@@ -7,6 +7,6 @@
 
 protocol MainScreenRouter {
     
-    func openCameraModule()
+    func openCameraModule(with moduleOutput: CoverlayCameraContainerModuleOutput)
     func openAboutAppModule()
 }
