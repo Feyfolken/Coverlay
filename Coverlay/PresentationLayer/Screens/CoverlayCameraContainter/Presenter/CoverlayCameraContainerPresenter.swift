@@ -10,17 +10,20 @@ import UIKit
 final class CoverlayCameraContainerPresenter {
     
     weak var view: CoverlayCameraContainerViewInput!
+    weak var moduleOutput: CoverlayCameraContainerModuleOutput!
+    
     var interactor: CoverlayCameraContainerInteractorInput!
     var router: CoverlayCameraContainerRouter!
-    
-    @objc
-    private func image(_ image: UIImage, didFinishSavingWithError err: Error?, contextInfo: UnsafeRawPointer) {
-        
-    }
+
+    private var isOverlayTransformationEnabled = true
+    private var currentlyChosenOverlayImage: UIImage!
 }
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerModuleInput {
     
+    func configureModule(with moduleOutput: CoverlayCameraContainerModuleOutput) {
+        self.moduleOutput = moduleOutput
+    }
 }
 
 extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
@@ -37,11 +40,35 @@ extension CoverlayCameraContainerPresenter: CoverlayCameraContainerViewOutput {
         
         UIImageWriteToSavedPhotosAlbum(rawImage, self, nil, nil)
         view.enableOverlayOpacitySlider(false)
+        moduleOutput.didSaveImageToLibrary()
     }
     
     func didSelectImageFromLibrary(_ image: UIImage?) {
+        currentlyChosenOverlayImage = image
+        
         view.displayOverlayImage(image)
         view.enableOverlayOpacitySlider(true)
+        
+        isOverlayTransformationEnabled = true
+        view.setImageForEnableImageTransformationButton(UIImage(named: "unlock_small")!.withColor(color: .white))
+    }
+    
+    func didTapEnableImageTransformationButton() {
+        isOverlayTransformationEnabled.toggle()
+        
+        let imageName = isOverlayTransformationEnabled ? "unlock_small" : "lock_small"
+        
+        view.setImageForEnableImageTransformationButton(UIImage(named: imageName)!.withColor(color: .white))
+        view.enableOverlayImageTransformation(isOverlayTransformationEnabled)
+    }
+    
+    func didTapRestoreOverlayImageFrameButton() {
+        isOverlayTransformationEnabled = true
+        
+        view.displayOverlayImage(currentlyChosenOverlayImage)
+        view.enableOverlayOpacitySlider(true)
+        view.enableOverlayImageTransformation(true)
+        view.setImageForEnableImageTransformationButton(UIImage(named: "unlock_small")!.withColor(color: .white))
     }
 }
 

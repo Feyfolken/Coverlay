@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import Lottie
 
 final class MainScreenViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var openCameraModuleButton: NeumorphicCircleButton!
     private var openAboutAppModuleButton: NeumorphicCircleButton!
-
+    
     var output: MainScreenViewOutput!
-
+    
     // MARK: - Life cycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -42,7 +43,7 @@ final class MainScreenViewController: UIViewController, UINavigationControllerDe
         
         view.addSubview(openAboutAppModuleButton)
         openAboutAppModuleButton.setButtonImage(UIImage(named: "info")!)
-
+        
         openAboutAppModuleButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(-40)
@@ -64,10 +65,33 @@ extension MainScreenViewController: MainScreenViewInput {
     
     func setupInitialState() {
         view.backgroundColor = .mainScreenBackgroundColor
-
+        
         setupNavigationBar()
         createOpenCameraModuleButton()
         createOpenAboutAppModuleButton()
+    }
+    
+    func showSaveSuccessAnimation() {
+        let animationName: String = self.traitCollection.userInterfaceStyle == .dark  ? "successAnimationDark" : "successAnimationLight"
+        let animationView = AnimationView(name: animationName)
+        animationView.frame = CGRect(x: openCameraModuleButton.frame.origin.x,
+                                     y: openCameraModuleButton.frame.origin.y,
+                                     width: 230,
+                                     height: 230)
+        animationView.center = openCameraModuleButton.center
+        view.addSubview(animationView)
+        
+        animationView.animationSpeed = 0.85
+        animationView.play { isCompleted in
+            if isCompleted {
+                UIView.animate(withDuration: 0.5) {
+                    animationView.alpha = 0
+                    
+                } completion: { isFadingEnded in
+                    animationView.removeFromSuperview()
+                }
+            }
+        }
     }
 }
 
@@ -87,3 +111,4 @@ extension MainScreenViewController: NeumorphicCircleButtonDelegate {
         }
     }
 }
+

@@ -17,8 +17,8 @@ public extension UIFont {
         return UIFont(name: "SignikaNegative-Bold", size: fontSize)!
     }
     
-    static func signikaNegativeRegularFontWithSize(fontSize: CGFloat) -> UIFont {
-        return UIFont(name: "SignikaNegative-Regular", size: fontSize)!
+    static func robotoSlabFontWithSize(fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "RobotoSlab-Regular", size: fontSize)!
     }
 }
 

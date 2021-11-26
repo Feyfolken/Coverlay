@@ -13,10 +13,9 @@
 		0C2ED6DB58B7CFD951117804 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3587C90384F29E960E7A2C /* AboutAppViewController.swift */; };
 		1A3538F0DCB037736633749C /* AboutAppViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B24D4B3C15EC3026635B47 /* AboutAppViewOutput.swift */; };
 		328C2CF53F0419E95AD6D4E7 /* AboutAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F14D8D70B971A6932D835 /* AboutAppInteractor.swift */; };
-		3E4452F627284EBB001A80E1 /* SignikaNegative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */; };
-		3E4452F8272856F2001A80E1 /* SignikaNegative-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */; };
 		3E4452FA272858C6001A80E1 /* SignikaNegative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */; };
 		3E445F82272C348600766A79 /* OnboardingInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E445F81272C348600766A79 /* OnboardingInfoCell.swift */; };
+		3E46115B27468F680015B81D /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E46115A27468F680015B81D /* RobotoSlab-Regular.ttf */; };
 		3E49C04D27296C62007970A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E49C04827296C62007970A8 /* Localizable.strings */; };
 		3E49C04E27296C62007970A8 /* GlobalLocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C04A27296C62007970A8 /* GlobalLocalizationConstants.swift */; };
 		3E49C04F27296C62007970A8 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C04C27296C62007970A8 /* Localizable.swift */; };
@@ -24,6 +23,9 @@
 		3E49C05827296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */; };
 		3E5356F32732D0AE00CE9A34 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */; };
 		3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E542C202722FC7A0000D137 /* FontExtension.swift */; };
+		3E57376B274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */; };
+		3E57376F274FD31700EF8A6B /* successAnimationLight.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E57376E274FD31700EF8A6B /* successAnimationLight.json */; };
+		3E573771274FD32B00EF8A6B /* successAnimationDark.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E573770274FD32B00EF8A6B /* successAnimationDark.json */; };
 		3E58E5DB273180E90076F3DC /* OnboardingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */; };
 		3E66E09F26D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */; };
 		3E66E0A026D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */; };
@@ -68,10 +70,9 @@
 
 /* Begin PBXFileReference section */
 		1B8DC5156EE7EB6846696CAA /* AboutAppViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutAppViewInput.swift; sourceTree = "<group>"; };
-		3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Regular.ttf"; sourceTree = "<group>"; };
-		3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-SemiBold.ttf"; sourceTree = "<group>"; };
 		3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Bold.ttf"; sourceTree = "<group>"; };
 		3E445F81272C348600766A79 /* OnboardingInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfoCell.swift; sourceTree = "<group>"; };
+		3E46115A27468F680015B81D /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		3E49C04927296C62007970A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3E49C04A27296C62007970A8 /* GlobalLocalizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalLocalizationConstants.swift; sourceTree = "<group>"; };
 		3E49C04B27296C62007970A8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -81,6 +82,9 @@
 		3E49C05727296D2E007970A8 /* AboutAppModuleLocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppModuleLocalizationConstants.swift; sourceTree = "<group>"; };
 		3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		3E542C202722FC7A0000D137 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleOutput.swift; sourceTree = "<group>"; };
+		3E57376E274FD31700EF8A6B /* successAnimationLight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successAnimationLight.json; sourceTree = "<group>"; };
+		3E573770274FD32B00EF8A6B /* successAnimationDark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successAnimationDark.json; sourceTree = "<group>"; };
 		3E58E5DA273180E90076F3DC /* OnboardingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInfo.swift; sourceTree = "<group>"; };
 		3E66E09026D69036009C22A7 /* CoverlayCameraContainerModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleAssembly.swift; sourceTree = "<group>"; };
 		3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverlayCameraContainerModuleInput.swift; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				3E66E09226D69036009C22A7 /* CoverlayCameraContainerModuleInput.swift */,
+				3E57376A274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift */,
 				3E66E09326D69036009C22A7 /* CoverlayCameraContainerPresenter.swift */,
 			);
 			path = Presenter;
@@ -352,10 +357,11 @@
 		3EA8D7ED26AB208100AD50FF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E57376E274FD31700EF8A6B /* successAnimationLight.json */,
+				3E573770274FD32B00EF8A6B /* successAnimationDark.json */,
 				3E5356F22732D03500CE9A34 /* Comfortaa-Light.ttf */,
-				3E4452F72728564A001A80E1 /* SignikaNegative-SemiBold.ttf */,
+				3E46115A27468F680015B81D /* RobotoSlab-Regular.ttf */,
 				3E4452F9272858BA001A80E1 /* SignikaNegative-Bold.ttf */,
-				3E4452F527284EB7001A80E1 /* SignikaNegative-Regular.ttf */,
 				3EA8D7E026AB204000AD50FF /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -525,15 +531,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E46115B27468F680015B81D /* RobotoSlab-Regular.ttf in Resources */,
 				3E49C05327296D0C007970A8 /* AboutAppModuleLocalization.strings in Resources */,
+				3E573771274FD32B00EF8A6B /* successAnimationDark.json in Resources */,
 				3EA8D7E426AB204000AD50FF /* LaunchScreen.storyboard in Resources */,
-				3E4452F8272856F2001A80E1 /* SignikaNegative-SemiBold.ttf in Resources */,
 				3EA8D7E126AB204000AD50FF /* Assets.xcassets in Resources */,
 				3E5356F32732D0AE00CE9A34 /* Comfortaa-Light.ttf in Resources */,
-				3E4452F627284EBB001A80E1 /* SignikaNegative-Regular.ttf in Resources */,
 				3E4452FA272858C6001A80E1 /* SignikaNegative-Bold.ttf in Resources */,
 				3E49C04D27296C62007970A8 /* Localizable.strings in Resources */,
 				3EA8D7DF26AB203600AD50FF /* CoverlayCamera.storyboard in Resources */,
+				3E57376F274FD31700EF8A6B /* successAnimationLight.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +605,7 @@
 				3E780B0326B430A600F31D17 /* MainModuleStoryboardConstants.swift in Sources */,
 				3E445F82272C348600766A79 /* OnboardingInfoCell.swift in Sources */,
 				3E542C212722FC7A0000D137 /* FontExtension.swift in Sources */,
+				3E57376B274FC7B200EF8A6B /* CoverlayCameraContainerModuleOutput.swift in Sources */,
 				3E66E0A226D69036009C22A7 /* CoverlayCameraContainerViewOutput.swift in Sources */,
 				3E780AF526B4227700F31D17 /* MainScreenViewOutput.swift in Sources */,
 				3E66E0A726D69036009C22A7 /* CoverlayCameraContainerInteractorInput.swift in Sources */,
@@ -727,7 +735,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -782,7 +790,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -15,6 +15,8 @@ public enum AboutAppModuleLocalizationConstants: String {
     case transparencyCardMessage
     case intersectionCardMessage
     case gesturesCardMessage
+    case restoreFrameCardMessage
+    case enableTransformationCardMessage
     case saveCardMessage
 }
 

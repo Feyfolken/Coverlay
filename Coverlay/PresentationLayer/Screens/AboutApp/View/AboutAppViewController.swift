@@ -48,19 +48,19 @@ final class AboutAppViewController: UIViewController {
     
     //MARK: Private methods
     private func setupScreenTitleLabel() {
-        screenTitleLabel.font = .signikaNegativeBoldFontWithSize(fontSize: 22)
+        screenTitleLabel.font = .signikaNegativeBoldFontWithSize(fontSize: 26)
         screenTitleLabel.text = AboutAppModuleLocalizationConstants.screenTitleLabelText.localized
         screenTitleLabel.textColor = .commonTextColor
     }
     
     private func setupGeneralDescriptionLabel() {
-        generalDescriptionLabel.font = .signikaNegativeRegularFontWithSize(fontSize: 16)
+        generalDescriptionLabel.font = .robotoSlabFontWithSize(fontSize: 20)
         generalDescriptionLabel.text = AboutAppModuleLocalizationConstants.generalDescriptionText.localized
         generalDescriptionLabel.textColor = .commonTextColor
     }
     
     private func setupAuthorLabel() {
-        authorLabel.font = .signikaNegativeRegularFontWithSize(fontSize: 10)
+        authorLabel.font = .robotoSlabFontWithSize(fontSize: 10)
         authorLabel.text = AboutAppModuleLocalizationConstants.authorshipText.localized
         authorLabel.textColor = .commonTextColor
     }
@@ -77,7 +77,7 @@ final class AboutAppViewController: UIViewController {
         collectionViewContainer.snp.makeConstraints { make in
             make.leading.trailing.equalTo(20)
             make.bottom.equalTo(authorLabel.snp.top).offset(-30)
-            make.top.equalTo(generalDescriptionLabel.snp.bottom).offset(25)
+            make.top.equalTo(generalDescriptionLabel.snp.bottom).offset(50)
         }
         
         collectionView.snp.makeConstraints { make in
@@ -136,7 +136,7 @@ extension AboutAppViewController: UICollectionViewDataSource {
 extension AboutAppViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 1.75, height: collectionView.frame.height - 30)
+        return CGSize(width: collectionView.frame.width / 1.75, height: collectionView.frame.height - 25)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

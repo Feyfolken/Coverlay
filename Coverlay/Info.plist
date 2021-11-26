@@ -69,8 +69,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Comfortaa-Light.ttf</string>
-		<string>SignikaNegative-Regular.ttf</string>
-		<string>SignikaNegative-SemiBold.ttf</string>
+		<string>RobotoSlab-Regular.ttf</string>
 		<string>SignikaNegative-Bold.ttf</string>
 	</array>
 	<key>LSApplicationCategoryType</key>

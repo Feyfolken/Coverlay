@@ -11,11 +11,12 @@ import SnapKit
 final class CoverlayCameraContainerViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var cameraContainerView: UIView!
-
+    
     private var overlayOpacitySlider: UISlider!
     private var coverImageView: UIImageView!
     private var photoGalleryButton: UIButton!
     private var enableImageTransformationButton: UIButton!
+    private var restoreOverlayImageFrameButton: UIButton!
     
     var output: CoverlayCameraContainerViewOutput!
     var imagePickers: UIImagePickerController?
@@ -50,7 +51,6 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
             imagePickers?.view.frame = cameraContainerView.bounds
             imagePickers?.allowsEditing = false
             imagePickers?.showsCameraControls = true
-            
             imagePickers?.view.autoresizingMask = [.flexibleWidth,  .flexibleHeight]
         }
     }
@@ -78,25 +78,52 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     private func setupEnableImageTransformationButton() {
-        guard let superview = imagePickers?.view.findFirstSubview(withClassName: "CAMTopBar") else { return }
+        guard enableImageTransformationButton == nil else { return }
         
         enableImageTransformationButton = UIButton()
-        enableImageTransformationButton.setImage(UIImage(named:"photo-gallery"), for: .normal)
+        enableImageTransformationButton.setImage(UIImage(named:"unlock_small")?.withColor(color: .white), for: .normal)
         enableImageTransformationButton.tintColor = .white
         enableImageTransformationButton.backgroundColor = .clear
+        enableImageTransformationButton.contentMode = .scaleAspectFit
+        enableImageTransformationButton.addTarget(self,
+                                                  action: #selector(didTapEnableTransformationButton(_:)),
+                                                  for: .touchUpInside)
         
-        superview.addSubview(enableImageTransformationButton)
+        view.addSubview(enableImageTransformationButton)
         
         enableImageTransformationButton.snp.makeConstraints { maker in
-            maker.centerX.centerY.equalToSuperview()
-            maker.height.equalTo(42)
-            maker.width.equalTo(44)
+            maker.centerX.equalToSuperview().offset(-20)
+            maker.top.equalToSuperview().offset(40)
+            maker.height.equalTo(30)
+            maker.width.equalTo(32)
+        }
+    }
+    
+    private func setupRestoreOverlayImageFrameButton() {
+        guard restoreOverlayImageFrameButton == nil else { return }
+        
+        restoreOverlayImageFrameButton = UIButton()
+        restoreOverlayImageFrameButton.setImage(UIImage(named:"restoreFrame")?.withColor(color: .white), for: .normal)
+        restoreOverlayImageFrameButton.tintColor = .white
+        restoreOverlayImageFrameButton.backgroundColor = .clear
+        restoreOverlayImageFrameButton.contentMode = .scaleAspectFit
+        restoreOverlayImageFrameButton.addTarget(self,
+                                                 action: #selector(didTapRestoreOverlayImageFrameButton(_:)),
+                                                 for: .touchUpInside)
+        
+        view.addSubview(restoreOverlayImageFrameButton)
+        
+        restoreOverlayImageFrameButton.snp.makeConstraints { maker in
+            maker.centerX.equalToSuperview().offset(20)
+            maker.top.equalToSuperview().offset(40)
+            maker.height.equalTo(30)
+            maker.width.equalTo(32)
         }
     }
     
     private func setupImageOpacitySlider() {
         guard overlayOpacitySlider == nil else { return }
-
+        
         overlayOpacitySlider = UISlider()
         
         overlayOpacitySlider.tintColor = .lightGray
@@ -107,7 +134,7 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         overlayOpacitySlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
         
         cameraContainerView.addSubview(overlayOpacitySlider)
-
+        
         overlayOpacitySlider.addTarget(self, action: #selector(didChangeSliderValue(sender:)), for: .valueChanged)
         enableOverlayOpacitySlider(false)
         
@@ -119,12 +146,22 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     private func createNewOverlayImageView() {
-        guard let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "CAMPreviewView") else { return }
+        guard let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "PLExpandableImageView") else {
+            if let cameraPreview = imagePickers?.view.findFirstSubview(withClassName: "CAMPreviewView") {
+                removeOldAndCreateNewOverlay(on: cameraPreview)
+            }
+            
+            return
+        }
         
+        removeOldAndCreateNewOverlay(on: cameraPreview)
+    }
+    
+    private func removeOldAndCreateNewOverlay(on superview: UIView) {
         removePreviousOverlay()
-        coverImageView = UIImageView(frame: cameraPreview.frame)
+        coverImageView = UIImageView(frame: superview.frame)
         coverImageView.contentMode = .scaleAspectFit
-        coverImageView.frame = cameraPreview.frame
+        coverImageView.frame = superview.frame
         
         cameraContainerView.insertSubview(coverImageView, belowSubview: overlayOpacitySlider)
     }
@@ -146,7 +183,7 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
     }
     
     @objc
-    func didTapPhotoGalleryButton(_ sender: Any) {
+    func didTapPhotoGalleryButton(_ sender: UIButton) {
         let imagePicker = UIImagePickerController()
         
         imagePicker.delegate = self
@@ -154,6 +191,16 @@ final class CoverlayCameraContainerViewController: UIViewController, UINavigatio
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true)
+    }
+    
+    @objc
+    func didTapEnableTransformationButton(_ sender: UIButton) {
+        output.didTapEnableImageTransformationButton()
+    }
+    
+    @objc
+    func didTapRestoreOverlayImageFrameButton(_ sender: UIButton) {
+        output.didTapRestoreOverlayImageFrameButton()
     }
 }
 
@@ -163,7 +210,7 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
     func setupInitialState() {
         addCameraInView()
         setupImageOpacitySlider()
-
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.setupPhotoGalleryButton()
         }
@@ -179,6 +226,7 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
         coverImageView.becomeGestureTransformable(gestureRecognizerDelegate: self)
         
         setupEnableImageTransformationButton()
+        setupRestoreOverlayImageFrameButton()
     }
     
     func enableOverlayOpacitySlider(_ isEnabled: Bool) {
@@ -192,6 +240,14 @@ extension CoverlayCameraContainerViewController: CoverlayCameraContainerViewInpu
         }
         
         overlayOpacitySlider.value = 0.5
+    }
+    
+    func setImageForEnableImageTransformationButton(_ image: UIImage) {
+        enableImageTransformationButton.setImage(image, for: .normal)
+    }
+    
+    func enableOverlayImageTransformation(_ isEnabled: Bool) {
+        coverImageView.isUserInteractionEnabled = isEnabled
     }
 }
 

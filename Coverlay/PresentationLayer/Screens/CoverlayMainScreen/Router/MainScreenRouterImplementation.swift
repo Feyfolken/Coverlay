@@ -14,9 +14,10 @@ final class MainScreenRouterImplementation {
 
 extension MainScreenRouterImplementation: MainScreenRouter {
     
-    func openCameraModule() {
+    func openCameraModule(with moduleOutput: CoverlayCameraContainerModuleOutput) {
         try! transitionHandler.forSegue(identifier: MainModuleStoryboardConstants.mainScreenModuleToContainerModule,
                                         to: CoverlayCameraContainerModuleInput.self).then { moduleInput in
+                                            moduleInput.configureModule(with: moduleOutput)
                                             return nil
         }
     }

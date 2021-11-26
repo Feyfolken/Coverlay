@@ -11,4 +11,6 @@ protocol CoverlayCameraContainerViewOutput {
     func viewIsReady()
     func cameraDidFinish(with resultImage: UIImage?)
     func didSelectImageFromLibrary(_ image: UIImage?)
+    func didTapEnableImageTransformationButton()
+    func didTapRestoreOverlayImageFrameButton()
 }

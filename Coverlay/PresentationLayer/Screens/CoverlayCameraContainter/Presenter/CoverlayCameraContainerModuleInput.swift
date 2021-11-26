@@ -5,6 +5,7 @@
 //  Created by Feyfolken on 30.07.2021.
 //
 
-protocol CoverlayCameraContainerModuleInput {
+protocol CoverlayCameraContainerModuleInput: AnyObject {
     
+    func configureModule(with moduleOutput: CoverlayCameraContainerModuleOutput)
 }

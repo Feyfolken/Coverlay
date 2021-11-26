@@ -85,7 +85,7 @@ final class OnboardingInfoCell: UICollectionViewCell {
 
         infoImageView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(-15)
+            make.centerY.equalToSuperview().offset(-25)
             make.height.width.equalTo(55)
         }
     }
@@ -93,7 +93,7 @@ final class OnboardingInfoCell: UICollectionViewCell {
     private func createInfoMessageTextView() {
         infoMessageTextView = UITextView(frame: .zero)
         infoMessageTextView.textAlignment = .center
-        infoMessageTextView.font = .signikaNegativeRegularFontWithSize(fontSize: 15)
+        infoMessageTextView.font = .robotoSlabFontWithSize(fontSize: 15)
         infoMessageTextView.isEditable = false
         infoMessageTextView.backgroundColor = .mainScreenBackgroundColor
         infoMessageTextView.textColor = .commonTextColor
@@ -104,7 +104,7 @@ final class OnboardingInfoCell: UICollectionViewCell {
             make.leading.equalToSuperview().offset(5)
             make.trailing.equalToSuperview().offset(-5)
             make.bottom.equalToSuperview()
-            make.top.equalTo(infoImageView.snp.bottom).offset(15)
+            make.top.equalTo(infoImageView.snp.bottom).offset(9)
         }
     }
 }
